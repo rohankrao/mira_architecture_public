@@ -3015,6 +3015,7 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
                                 <li>• <strong>Sub-2s Logical Invalidation:</strong> Sets a 1-bit tombstone flag in Lance metadata, instantly filtering records from training views.</li>
                                 <li>• <strong>Retraction Dependency Cascade:</strong> Lineage engine matches `_parent_id` to purge child chunks, dedup hash keys, and feature caches.</li>
                                 <li>• <strong>Physical Vacuum:</strong> Background GC safely reclaims raw disk blocks during scheduled off-peak compaction cycles.</li>
+                                <li>• <strong>Dataset Contracts:</strong> Each consumer — a training run, an evaluation, a partner release — is bound to a named, versioned selection. "Which models saw this document?" is a lookup, which is what makes removal <em>bounded</em>: retrain what actually consumed it, not everything.</li>
                                 <li>• <strong>Derived Statistics Retract, Not Recompute:</strong> Corpus statistics, language distributions and cluster counts that already include a purged document are updated in place wherever the aggregate is invertible. The planner records which aggregates support this, so the cost of a takedown is known <em>before</em> it is requested, not discovered during it.</li>
                             </ul>
                         </div>
@@ -3183,6 +3184,7 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
                         <div class="card-body">
                             <strong>Formal Ingestion Contract:</strong>
                             <ul class="feature-list" style="margin-top: 4px;">
+                                <li>• <strong>Source Contract Enforcement:</strong> A drifted source schema is refused with the changed columns named, rather than coerced silently; decompression is bounded so a small archive cannot expand into the scratch disk.</li>
                                 <li>• <strong>Source Trait:</strong> `discover()`, `enumerate()`, `partition()`, `read()`, `checkpoint()`, `resume()`, `commit()`, `rate_limit()`.</li>
                                 <li>• <strong>DLQ Poison Isolation:</strong> Corrupted WARC archives, broken PDF headers, or encoding bombs route to `s3://quarantine/dlq/` with byte-offset metadata; pipeline never crashes.</li>
                                 <li>• <strong>Heterogeneous Sources:</strong> Cloud object stores (S3/GCS/MinIO), HTTP crawl archives (Common Crawl), HuggingFace datasets, and local NVMe storage.</li>
@@ -4011,6 +4013,7 @@ schema = pa.schema([
                         <div class="card-body">
                             Schema and structural assertions:
                             <ul class="feature-list" style="margin-top: 6px;">
+                                <li>• <strong>Checks Run in Production, Not Only in CI:</strong> Tests run against fixtures before merge; <em>checks</em> run against the data each job actually produced — keep-rate drift, per-column cardinality collapse, dedup recall against ground truth — recorded per run and either blocking or advisory. A tagger that silently returns one constant passes every unit test.</li>
                                 <li>• <strong>Schema Contracts:</strong> Rejects batches with undeclared types or corrupt field IDs.</li>
                                 <li>• <strong>Null-Rate Bounds:</strong> Alerts if null rate exceeds illustrative 0.1% threshold (configurable per corpus) on required fields.</li>
                                 <li>• <strong>Distribution Drift:</strong> Token Count-Min sketches monitor discrete vocabulary shift via KL divergence (D<sub>KL</sub>); t-digest/KLL sketches track continuous feature quantiles (perplexity, length).</li>
@@ -4140,6 +4143,7 @@ schema = pa.schema([
                                 <div class="flow-step" style="padding: 3px 5px; border-color: #A78BFA;"><div class="flow-step-title" style="font-size: 11px; color: #C084FC;">3. Mixture</div><div class="flow-step-desc" style="font-size: 11px;">Stratified Seeds</div></div>
                             </div>
                             <ul class="feature-list" style="margin-top: 8px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>No Leakage Through the Exhaust:</strong> Dead-letter records and error messages are redacted or hashed by default. A failed row is exactly the row most likely to contain personal data, and a quarantine table that stores it verbatim is a second, unguarded copy.</li>
                                 <li>• <strong>PAN Card Verification:</strong> Format regex validation for 10-character Indian Permanent Account Numbers (<code>[A-Z]{5}[0-9]{4}[A-Z]</code>).</li>
                                 <li>• <strong>Multi-Tier Decontamination:</strong> 13-gram exact match and containment checks against IN22, MILU, and national exams to minimize test set leakage.</li>
                                 <li>• <strong>Deterministic Composition:</strong> Quota and stratified sampling across Phase 1 Indic languages (Hindi, Sanskrit, Tamil) with replayable deterministic seeds.</li>
