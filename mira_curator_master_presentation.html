@@ -1780,7 +1780,7 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
 
                 <div class="stat-banner">
                     <div class="stat-box">
-                        <span class="stat-val">3.5 GB/s</span>
+                        <span class="stat-val">3.5 GB/s (target)</span>
                         <span class="stat-lbl">Single-core SIMD scan — design target, measured per tier</span>
                     </div>
                     <div class="stat-box">
@@ -1989,7 +1989,7 @@ job.watch_logs()                  <span class="cm"># Live streaming feedback</sp
                     </div>
                     <div class="stat-box">
                         <span class="stat-val">Deploy Anywhere</span>
-                        <span class="stat-lbl">SkyPilot Multi-Cloud &amp; K8s</span>
+                        <span class="stat-lbl">Clouds, K8s, Slurm &amp; SSH Pools</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-val">Engine Fusion</span>
@@ -2863,6 +2863,7 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
                                 <li>• <strong>Sub-2s Logical Invalidation:</strong> Sets a 1-bit tombstone flag in Lance metadata, instantly filtering records from training views.</li>
                                 <li>• <strong>Retraction Dependency Cascade:</strong> Lineage engine matches `_parent_id` to purge child chunks, dedup hash keys, and feature caches.</li>
                                 <li>• <strong>Physical Vacuum:</strong> Background GC safely reclaims raw disk blocks during scheduled off-peak compaction cycles.</li>
+                                <li>• <strong>Derived Statistics Retract, Not Recompute:</strong> Corpus statistics, language distributions and cluster counts that already include a purged document are updated in place wherever the aggregate is invertible. The planner records which aggregates support this, so the cost of a takedown is known <em>before</em> it is requested, not discovered during it.</li>
                             </ul>
                         </div>
                     </div>
@@ -2950,6 +2951,7 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
                                 <li>• <strong>Source Trait:</strong> `discover()`, `enumerate()`, `partition()`, `read()`, `checkpoint()`, `resume()`, `commit()`, `rate_limit()`.</li>
                                 <li>• <strong>DLQ Poison Isolation:</strong> Corrupted WARC archives, broken PDF headers, or encoding bombs route to `s3://quarantine/dlq/` with byte-offset metadata; pipeline never crashes.</li>
                                 <li>• <strong>Heterogeneous Sources:</strong> Cloud object stores (S3/GCS/MinIO), HTTP crawl archives (Common Crawl), HuggingFace datasets, and local NVMe storage.</li>
+                                <li>• <strong>Adaptive Concurrency:</strong> In-flight requests to remote endpoints and object stores adjust to observed round-trip time and error rate, rather than a hand-tuned constant — the right control for network- and I/O-bound work such as audio fetch and LLM tagging. Backpressure blocks the producer; documents are never dropped silently.</li>
                             </ul>
                         </div>
                     </div>
@@ -2973,7 +2975,7 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
 
                 <div class="stat-banner">
                     <div class="stat-box">
-                        <span class="stat-val">&gt; 5.0 GB / s</span>
+                        <span class="stat-val">&gt; 5.0 GB/s target</span>
                         <span class="stat-lbl">Aggregate Sync Throughput</span>
                     </div>
                     <div class="stat-box">
@@ -3454,7 +3456,7 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
                     <div class="card highlight-sky">
                         <div class="card-header">
                             <span class="card-title">Tier 1: Exact Hash (xxh3)</span>
-                            <span class="tag-pill blue">3.5 GB/s</span>
+                            <span class="tag-pill blue">3.5 GB/s (target)</span>
                         </div>
                         <div class="card-body">
                             Fast xxh3-128 SIMD text hashing, cache-resident.<br><br>
@@ -3494,7 +3496,7 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
                         <span class="stat-lbl">Hierarchical Dedup Funnel</span>
                     </div>
                     <div class="stat-box">
-                        <span class="stat-val">3.5 GB / s</span>
+                        <span class="stat-val">3.5 GB/s target</span>
                         <span class="stat-lbl">Tier 1 Exact Hash Speed</span>
                     </div>
                     <div class="stat-box">
@@ -4563,10 +4565,10 @@ mixture_schedule:
                         </div>
                         <div class="card-body">
                             <ul class="feature-list">
-                                <li>• <strong>Cloud Ingestion:</strong> &gt; 5.0 GB/s aggregate multi-threaded S3 sync.</li>
-                                <li>• <strong>Indic Normalizer + Font Rescue:</strong> &gt; 3.0 GB/s per 64-core node.</li>
+                                <li>• <strong>Cloud Ingestion:</strong> &gt; 5.0 GB/s aggregate multi-threaded S3 sync (design target, to be measured on the delivered hardware).</li>
+                                <li>• <strong>Indic Normalizer + Font Rescue:</strong> &gt; 3.0 GB/s per 64-core node (design target).</li>
                                 <li>• <strong>Exact SIMD Hashing:</strong> ~3,500 MB/s per core (design target, cache-resident 128 KiB blocks; measured per tier in CI).</li>
-                                <li>• <strong>Near-Dedup Signatures:</strong> &gt; 1.2 GB/s per node (MinHash (~260 perms) MinHash).</li>
+                                <li>• <strong>Near-Dedup Signatures:</strong> &gt; 1.2 GB/s per node (design target; MinHash, ~260 permutations).</li>
                                 <li>• <strong>Graph Solving:</strong> 10M duplicate links resolved in &lt; 5s (benchmark target)!</li>
                             </ul>
                         </div>
@@ -5086,7 +5088,7 @@ mixture_schedule:
                                 <li>• <strong>3. Resource Scheduling &amp; Actors:</strong> Resident GPU inference pools eliminate cold starts; bounded memory limits.</li>
                                 <li>• <strong>4. Resilient Ingestion &amp; DLQ:</strong> Formal <code>SourceConnector</code> contract; malformed records quarantined to Dead-Letter Queue.</li>
                                 <li>• <strong>5. Incremental Watermarks:</strong> <code>InputRef = Source | Table</code> snapshot watermarks for deterministic delta batches.</li>
-                                <li>• <strong>6. Credit-Based Flow Control:</strong> Lossless backpressure policies (<code>BLOCK</code>, <code>SPILL</code> to NVMe, <code>SLOW_SOURCE</code>).</li>
+                                <li>• <strong>6. Flow Control &amp; Stall Detection:</strong> Lossless backpressure bounded by resident <em>bytes</em> rather than batch count (<code>BLOCK</code>, <code>SPILL</code> to NVMe, <code>SLOW_SOURCE</code>), plus a no-progress watchdog that fails the run naming the stalled stage instead of hanging overnight.</li>
                                 <li>• <strong>7. Replay &amp; Idempotency:</strong> At-least-once delivery with positional <code>doc_id</code> keys and deterministic replay.</li>
                             </ul>
                         </div>
@@ -5274,7 +5276,7 @@ mixture_schedule:
                                 <li>• <strong>Pipeline Orchestration:</strong> High-level pipeline authoring, Ray distributed execution, and stage lifecycle management.</li>
                                 <li>• <strong>Extensible Tagger Catalog:</strong> 50+ quality, linguistic, and PII filters using BaseTagger (unified @tagger decorator ergonomics planned).</li>
                                 <li>• <strong>Resilient Ingestion:</strong> Chunk-level checkpointing and resume; per-row error isolation and Dead-Letter Queues (DLQ) in active development.</li>
-                                <li>• <strong>'Deploy Anywhere' Portability:</strong> Native SkyPilot integration dispatches jobs across AWS, GCP, Azure, and Kubernetes with zero infra lock-in.</li>
+                                <li>• <strong>'Deploy Anywhere' Portability:</strong> Native SkyPilot integration dispatches jobs across AWS, GCP, Azure, Kubernetes — and, for institutional clusters, <strong>Slurm queues and plain SSH node pools</strong>, so on-prem hardware needs no Kubernetes. Managed jobs recover from preemption.</li>
                             </ul>
                         </div>
                     </div>
@@ -5435,7 +5437,7 @@ mixture_schedule:
                         <div class="card-body">
                             <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
                                 <li>• <strong>Hardware Agnostic:</strong> Targets tiers from x86-64 laptops to AVX-512 + AMX servers, with identical bitwise outputs.</li>
-                                <li>• <strong>Deploy Anywhere:</strong> SkyPilot-managed dispatch across AWS, GCP, Azure, and on-prem Kubernetes clusters with air-gapped mirrors.</li>
+                                <li>• <strong>Deploy Anywhere:</strong> SkyPilot-managed dispatch across AWS, GCP, Azure, on-prem Kubernetes, Slurm queues and bare-metal SSH node pools, with air-gapped mirrors.</li>
                                 <li>• <strong>CPU-First Execution:</strong> Every pipeline operator has an optimized CPU path; GPUs used strictly where they provide positive ROI.</li>
                                 <li>• <strong>Incremental Arrival:</strong> Daily raw ingestion handled via micro-batches with persistent state deduplication.</li>
                                 <li>• <strong>Core Team Model:</strong> Focused engineering pod (Systems/Rust, Indic NLP, ML Infra) plus part-time linguists over 4 months.</li>
