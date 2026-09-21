@@ -992,10 +992,10 @@
         </div>
 
         <!-- =========================================================================
-             ACT I: THE STRATEGIC NECESSITY & SYSTEMS FOUNDATIONS (SLIDES 1 - 8)
+             ACT I: THE STRATEGIC NECESSITY & SYSTEMS FOUNDATIONS (SLIDES 1 - 9)
              ========================================================================= -->
 
-        <!-- SLIDE 1: Title & Mission -->
+        <!-- SLIDE 1: MIRA Curator: Architecture & Master Plan -->
         <div class="slide active" id="slide-1" data-index="0">
             <div class="slide-header">
                 <div class="slide-header-text">
@@ -1077,7 +1077,7 @@
                             <div class="code-container" style="margin-top: 4px;">
                                 <div class="code-header">jupyter_notebook.py · PYTHON</div>
                                 <div class="code-snippet" style="font-size: 11px; line-height: 1.35;">
-<span class="kw">import</span> mira_curator <span class="kw">as</span> mira
+<span class="kw">import</span> mira_curate <span class="kw">as</span> mira
 
 <span class="cm"># Load, enrich, and inspect in Jupyter:</span>
 pipe = (mira.read(<span class="str">"s3://bharat-crawl/*.parquet"</span>)
@@ -1128,8 +1128,176 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
             </div>
         </div>
 
-        <!-- SLIDE 2: The Two Ancestors -->
+        <!-- SLIDE 2: The Core Mission: Building India's Sovereign Data Moat -->
         <div class="slide" id="slide-2" data-index="1">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge curation"><span class="ico" aria-hidden="true">⚑</span> Strategic Objective</span>
+                        <span class="slide-category">India's Sovereign Foundation Model Mission</span>
+                    </div>
+                    <h2 class="slide-title">The Core Mission: Building India's Sovereign Data Moat</h2>
+                    <div class="slide-subtitle">Why superior data engineering is the decisive factor in training world-class Indic foundation models</div>
+                </div>
+                <div class="slide-logo">Sovereign Moat</div>
+            </div>
+
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT IT DOES:</span>
+                        <span class="what-text">Establishes the strategic imperative: empowering Indian institutions to curate sovereign, culturally nuanced, and legally compliant pretraining datasets.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">Western pretraining datasets often under-represent Indian languages because standard pipelines misclassify non-Latin scripts as low-signal text. MIRA provides sovereign, Indic-first data curation.</span>
+                    </div>
+                </div>
+
+                <div class="grid-3" style="height: 66%;">
+                    <div class="card highlight-sky">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">अ</span> 1. Linguistic Sovereignty</span>
+                            <span class="tag-pill blue">Phase 1: Hin, San, Tam</span>
+                        </div>
+                        <div class="card-body">
+                            Phase 1 prioritises Hindi, Sanskrit, and Tamil, with an extensible architecture supporting all 22 scheduled languages in phased expansion. Indic text fragments badly under English-centric tokenizers; MIRA measures tokens-per-word per language and prepares the corpus for downstream Indic tokenizer training:
+                            <div class="compare-box bad" style="margin-top: 6px; padding: 5px 8px; font-size: 11px;">
+                                <strong>English-Centric Tokenizer:</strong> High fertility on Indic scripts (inflates sequence length and training compute)
+                            </div>
+                            <div class="compare-box good" style="margin-top: 4px; padding: 5px 8px; font-size: 11px;">
+                                <strong>MIRA Fertility Profiler:</strong> Measures tokens-per-word per language; curates balanced corpus for Indic tokenizers
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card highlight-amber">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">▦</span> 2. Heritage Font Recovery</span>
+                            <span class="tag-pill amber">30-Year Digital Rescue</span>
+                        </div>
+                        <div class="card-body">
+                            ~30–35% (estimate) of Indian government archives and literature (1990–2010) use legacy proprietary fonts (Krutidev, Chanakya). These render visually but are saved as corrupted ASCII gibberish:
+                            <div class="compare-box bad" style="margin-top: 6px; padding: 5px 8px; font-size: 11px;">
+                                <strong>Legacy 1990s ASCII:</strong> <code>"Hkkjr ljdkj"</code> (corrupted English ASCII on disk)
+                            </div>
+                            <div class="compare-box good" style="margin-top: 4px; padding: 5px 8px; font-size: 11px;">
+                                <strong>MIRA SIMD Transcoder:</strong> <code>"भारत सरकार"</code> (restores 30 yrs of Indian heritage)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card highlight-emerald">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">⚖</span> 3. Indian Legal Compliance</span>
+                            <span class="tag-pill green">DPDP Act 2023</span>
+                        </div>
+                        <div class="card-body">
+                            Training on raw data risks DPDP 2023 violations. Naively masking all 12-digit numbers deletes dates and financial accounts. MIRA embeds algebraic Verhoeff validation and non-destructive spans:
+                            <div class="flow-diagram" style="margin-top: 6px; padding: 4px 6px;">
+                                <div class="flow-step" style="padding: 3px 5px;"><div class="flow-step-title" style="font-size: 11px;">12 Digits</div><div class="flow-step-desc" style="font-size: 11px;">Regex Candidate</div></div>
+                                <div class="flow-arrow">&rarr;</div>
+                                <div class="flow-step active" style="padding: 3px 5px; border-color: #F59E0B;"><div class="flow-step-title" style="font-size: 11px; color: #FBBF24;">Verhoeff D5</div><div class="flow-step-desc" style="font-size: 11px;">Checksum Valid</div></div>
+                                <div class="flow-arrow">&rarr;</div>
+                                <div class="flow-step" style="padding: 3px 5px; border-color: #10B981;"><div class="flow-step-title" style="font-size: 11px; color: #34D399;">mask__spans</div><div class="flow-step-desc" style="font-size: 11px;">Audit Mask</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-banner">
+                    <div class="stat-box">
+                        <span class="stat-val">22 Languages</span>
+                        <span class="stat-lbl">Phased Extensible Coverage</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val">~30–35% (estimate)</span>
+                        <span class="stat-lbl">Digital Heritage Font Rescue</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val">DPDP-Aligned</span>
+                        <span class="stat-lbl">Verhoeff Checksum & Retraction</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val">~40% (estimate)</span>
+                        <span class="stat-lbl">Reduced Token Fragmentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: Why Build: The Gaps No Existing Toolchain Closes -->
+        <div class="slide" id="slide-3" data-index="2">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge curation"><span class="ico" aria-hidden="true">⚖</span> Landscape</span>
+                        <span class="slide-category">What Exists, and Where It Stops</span>
+                        <span class="tag-pill blue">Verified 2026-09</span>
+                    </div>
+                    <h2 class="slide-title">Why Build: The Gaps No Existing Toolchain Closes</h2>
+                    <div class="slide-subtitle">The mature tools are good, actively maintained, and we integrate them — four capabilities simply do not exist in any of them</div>
+                </div>
+                <div class="slide-logo">Landscape</div>
+            </div>
+
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT IT DOES:</span>
+                        <span class="what-text">Positions MIRA against the maintained alternatives (datatrove, Data-Juicer, NeMo Curator, dolma, Daft) rather than around them: adopt their operators, build only what is missing.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">Re-implementing a solved operator is wasted effort. The case for building rests on four capabilities that no maintained framework provides, each of which is a data-model decision that cannot be bolted on later.</span>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="height: 60%;">
+                    <div class="card highlight-amber">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">⊘</span> Missing Everywhere</span>
+                            <span class="tag-pill amber">The Reason to Build</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.4;">
+                                <li>• <strong>Incremental recomputation.</strong> Improving one tagger re-runs the corpus everywhere. datatrove resumes failed tasks; it does not recompute only what changed. CocoIndex and Pixeltable do this properly, at RAG scale, not for pretraining corpora.</li>
+                                <li>• <strong>Stateful operators that absorb new data.</strong> Daily arrival should fold into a persistent dedup index, corpus statistics and cluster assignments — with the incremental result provably equal to a full rebuild, and deletions retracting from it. Every tool rebuilds from scratch instead.</li>
+                                <li>• <strong>One deduplication cascade.</strong> The mature pipelines stop at exact, MinHash and substring dedup; semantic deduplication means adding a second framework and reconciling two sets of clusters. We keep exact, fuzzy and semantic in one cascade, over one cluster table.</li>
+                                <li>• <strong>A query layer over curated data.</strong> Every framework filters destructively and writes a new corpus. dolma and DCLM keep quality signals, but no tool answers "10% agriculture, quality &gt; 0.8, 100B tokens" with the decision recorded per row.</li>
+                                <li>• <strong>Indic correctness as an engine property.</strong> The one Indic-first pipeline (AI4Bharat setu) has been unmaintained since May 2024. The best multilingual pipeline strips Unicode combining marks during normalisation — which deletes viramas and matras.</li>
+                                <li>• <strong>Per-record provenance and consent</strong> that survives into derived shards, which is what a takedown obligation actually requires.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card highlight-emerald">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">⊕</span> Adopted, Not Rebuilt</span>
+                            <span class="tag-pill green">Integration First</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.4;">
+                                <li>• <strong>Operators:</strong> quality heuristics, exact and fuzzy dedup methods, n-gram decontamination — mature in datatrove, Data-Juicer and dolma, and reachable through adapters rather than rewritten.</li>
+                                <li>• <strong>Extraction:</strong> HTML and PDF via trafilatura, Resiliparse and Docling. We add spans and provenance around them, not another parser.</li>
+                                <li>• <strong>Models:</strong> GlotLID, OpenLID, IndicLID for language identification; Presidio's Indian ID patterns for PII.</li>
+                                <li>• <strong>Execution and storage:</strong> Ray, SkyPilot, DuckDB, Parquet, Lance. We are not writing a scheduler or a table format.</li>
+                                <li>• <strong>Multimodal:</strong> speech, video and image curation already exist at scale; Phase 2 arrives as adapters, not as a second engine.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">Resume &ne; Incremental</span><span class="stat-lbl">No Tool Recomputes Only What Changed</span></div>
+                    <div class="stat-box"><span class="stat-val">No SQL Layer</span><span class="stat-lbl">Curation Frameworks Expose None; Engines Do</span></div>
+                    <div class="stat-box"><span class="stat-val">Indic Gap</span><span class="stat-lbl">Sole Indic Pipeline Stale Since 2024</span></div>
+                    <div class="stat-box"><span class="stat-val">Adopt First</span><span class="stat-lbl">Build Only What Is Missing</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: Genesis: Harmonizing Our Foundational Codebases -->
+        <div class="slide" id="slide-4" data-index="3">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1227,8 +1395,8 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
             </div>
         </div>
 
-        <!-- SLIDE 3: The 4 Bottlenecks (Part 1) -->
-        <div class="slide" id="slide-3" data-index="2">
+        <!-- SLIDE 5: The 4 Critical Bottlenecks (Part 1 -->
+        <div class="slide" id="slide-5" data-index="4">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1310,8 +1478,8 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
             </div>
         </div>
 
-        <!-- SLIDE 4: The 4 Bottlenecks (Part 2) -->
-        <div class="slide" id="slide-4" data-index="3">
+        <!-- SLIDE 7: Systems Rosetta Stone: Foundational Systems Terms -->
+        <div class="slide" id="slide-6" data-index="5">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1393,106 +1561,7 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
             </div>
         </div>
 
-        <!-- SLIDE 5: The Core Mission -->
-        <div class="slide" id="slide-5" data-index="4">
-            <div class="slide-header">
-                <div class="slide-header-text">
-                    <div class="slide-meta">
-                        <span class="slide-badge curation"><span class="ico" aria-hidden="true">⚑</span> Strategic Objective</span>
-                        <span class="slide-category">India's Sovereign Foundation Model Mission</span>
-                    </div>
-                    <h2 class="slide-title">The Core Mission: Building India's Sovereign Data Moat</h2>
-                    <div class="slide-subtitle">Why superior data engineering is the decisive factor in training world-class Indic foundation models</div>
-                </div>
-                <div class="slide-logo">Sovereign Moat</div>
-            </div>
-
-            <div class="slide-content">
-                <div class="what-why-strip">
-                    <div class="what-box">
-                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT IT DOES:</span>
-                        <span class="what-text">Establishes the strategic imperative: empowering Indian institutions to curate sovereign, culturally nuanced, and legally compliant pretraining datasets.</span>
-                    </div>
-                    <div class="why-box">
-                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
-                        <span class="why-text">Western pretraining datasets often under-represent Indian languages because standard pipelines misclassify non-Latin scripts as low-signal text. MIRA provides sovereign, Indic-first data curation.</span>
-                    </div>
-                </div>
-
-                <div class="grid-3" style="height: 66%;">
-                    <div class="card highlight-sky">
-                        <div class="card-header">
-                            <span class="card-title"><span class="ico" aria-hidden="true">अ</span> 1. Linguistic Sovereignty</span>
-                            <span class="tag-pill blue">Phase 1: Hin, San, Tam</span>
-                        </div>
-                        <div class="card-body">
-                            Phase 1 prioritises Hindi, Sanskrit, and Tamil, with an extensible architecture supporting all 22 scheduled languages in phased expansion. Indic text fragments badly under English-centric tokenizers; MIRA measures tokens-per-word per language and prepares the corpus for downstream Indic tokenizer training:
-                            <div class="compare-box bad" style="margin-top: 6px; padding: 5px 8px; font-size: 11px;">
-                                <strong>English-Centric Tokenizer:</strong> High fertility on Indic scripts (inflates sequence length and training compute)
-                            </div>
-                            <div class="compare-box good" style="margin-top: 4px; padding: 5px 8px; font-size: 11px;">
-                                <strong>MIRA Fertility Profiler:</strong> Measures tokens-per-word per language; curates balanced corpus for Indic tokenizers
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card highlight-amber">
-                        <div class="card-header">
-                            <span class="card-title"><span class="ico" aria-hidden="true">▦</span> 2. Heritage Font Recovery</span>
-                            <span class="tag-pill amber">30-Year Digital Rescue</span>
-                        </div>
-                        <div class="card-body">
-                            ~30–35% (estimate) of Indian government archives and literature (1990–2010) use legacy proprietary fonts (Krutidev, Chanakya). These render visually but are saved as corrupted ASCII gibberish:
-                            <div class="compare-box bad" style="margin-top: 6px; padding: 5px 8px; font-size: 11px;">
-                                <strong>Legacy 1990s ASCII:</strong> <code>"Hkkjr ljdkj"</code> (corrupted English ASCII on disk)
-                            </div>
-                            <div class="compare-box good" style="margin-top: 4px; padding: 5px 8px; font-size: 11px;">
-                                <strong>MIRA SIMD Transcoder:</strong> <code>"भारत सरकार"</code> (restores 30 yrs of Indian heritage)
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card highlight-emerald">
-                        <div class="card-header">
-                            <span class="card-title"><span class="ico" aria-hidden="true">⚖</span> 3. Indian Legal Compliance</span>
-                            <span class="tag-pill green">DPDP Act 2023</span>
-                        </div>
-                        <div class="card-body">
-                            Training on raw data risks DPDP 2023 violations. Naively masking all 12-digit numbers deletes dates and financial accounts. MIRA embeds algebraic Verhoeff validation and non-destructive spans:
-                            <div class="flow-diagram" style="margin-top: 6px; padding: 4px 6px;">
-                                <div class="flow-step" style="padding: 3px 5px;"><div class="flow-step-title" style="font-size: 11px;">12 Digits</div><div class="flow-step-desc" style="font-size: 11px;">Regex Candidate</div></div>
-                                <div class="flow-arrow">&rarr;</div>
-                                <div class="flow-step active" style="padding: 3px 5px; border-color: #F59E0B;"><div class="flow-step-title" style="font-size: 11px; color: #FBBF24;">Verhoeff D5</div><div class="flow-step-desc" style="font-size: 11px;">Checksum Valid</div></div>
-                                <div class="flow-arrow">&rarr;</div>
-                                <div class="flow-step" style="padding: 3px 5px; border-color: #10B981;"><div class="flow-step-title" style="font-size: 11px; color: #34D399;">mask__spans</div><div class="flow-step-desc" style="font-size: 11px;">Audit Mask</div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="stat-banner">
-                    <div class="stat-box">
-                        <span class="stat-val">22 Languages</span>
-                        <span class="stat-lbl">Phased Extensible Coverage</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-val">~30–35% (estimate)</span>
-                        <span class="stat-lbl">Digital Heritage Font Rescue</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-val">DPDP-Aligned</span>
-                        <span class="stat-lbl">Verhoeff Checksum & Retraction</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-val">~40% (estimate)</span>
-                        <span class="stat-lbl">Reduced Token Fragmentation</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SLIDE 6: Systems Rosetta Stone (Part 1) -->
-        <div class="slide" id="slide-6" data-index="5">
+        <div class="slide" id="slide-7" data-index="6">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1589,8 +1658,8 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
             </div>
         </div>
 
-        <!-- SLIDE 7: Systems Rosetta Stone (Part 2) -->
-        <div class="slide" id="slide-7" data-index="6">
+        <!-- SLIDE 8: Systems Rosetta Stone: Data Processing Patterns -->
+        <div class="slide" id="slide-8" data-index="7">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1689,8 +1758,8 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
             </div>
         </div>
 
-        <!-- SLIDE 8: SIMD Vector Registers Deep Dive -->
-        <div class="slide" id="slide-8" data-index="7">
+        <!-- SLIDE 9: Hardware Acceleration: SIMD Vector Registers -->
+        <div class="slide" id="slide-9" data-index="8">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1800,11 +1869,11 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
         </div>
 
         <!-- =========================================================================
-             ACT II: PYTHON-FIRST DEVELOPER EXPERIENCE (SLIDES 9 - 15)
+             ACT II: PYTHON-FIRST DEVELOPER EXPERIENCE (SLIDES 10 - 17)
              ========================================================================= -->
 
-        <!-- SLIDE 9: Researcher & Linguist Journey -->
-        <div class="slide" id="slide-9" data-index="8">
+        <!-- SLIDE 10: The ML Researcher & Linguist Journey -->
+        <div class="slide" id="slide-10" data-index="9">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1840,7 +1909,7 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
                             <div class="code-container" style="margin-top: 6px;">
                                 <div class="code-header">curate_hindi_corpus.ipynb · JUPYTER</div>
                                 <div class="code-snippet">
-<span class="kw">import</span> mira_curator <span class="kw">as</span> mira
+<span class="kw">import</span> mira_curate <span class="kw">as</span> mira
 
 <span class="cm"># 1. Plain typed function (zero decorators; schema inferred automatically)</span>
 <span class="kw">def</span> <span class="fn">check_hindi</span>(text: <span class="cls">str</span>) -> <span class="cls">bool</span>:
@@ -1894,8 +1963,8 @@ preview_df = pipe.preview(n=<span class="num">5</span>)  <span class="cm"># Inst
             </div>
         </div>
 
-        <!-- SLIDE 10: Python-First Architecture -->
-        <div class="slide" id="slide-10" data-index="9">
+        <!-- SLIDE 11: DX Architecture -->
+        <div class="slide" id="slide-11" data-index="10">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1932,7 +2001,7 @@ preview_df = pipe.preview(n=<span class="num">5</span>)  <span class="cm"># Inst
                                 <div class="code-header">curator_notebook.ipynb · 5 API TIERS</div>
                                 <div class="code-snippet" style="font-size: 11px; line-height: 1.35;">
 <span class="kw">import</span> pyarrow <span class="kw">as</span> pa, pyarrow.compute <span class="kw">as</span> pc
-<span class="kw">import</span> mira_curator <span class="kw">as</span> mira
+<span class="kw">import</span> mira_curate <span class="kw">as</span> mira
 
 <span class="cm"># Level 1: Plain typed Python function (schema inferred)</span>
 <span class="kw">def</span> <span class="fn">is_agri</span>(text: <span class="cls">str</span>) -> <span class="cls">bool</span>:
@@ -1999,8 +2068,91 @@ job.watch_logs()                  <span class="cm"># Live streaming feedback</sp
             </div>
         </div>
 
-        <!-- SLIDE 11: The 4 Core Decorators & 5 Stage Kinds -->
-        <div class="slide" id="slide-11" data-index="10">
+        <!-- SLIDE 13: The Core Decorators & 5 Stage Kinds -->
+        <div class="slide" id="slide-12" data-index="11">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge dx"><span class="ico" aria-hidden="true">⇄</span> Developer Experience</span>
+                        <span class="slide-category">Laptop → Cluster → Query Time</span>
+                        <span class="tag-pill blue">No Skew</span>
+                    </div>
+                    <h2 class="slide-title">One Pipeline, Three Places: Eliminating Training/Serving Skew</h2>
+                    <div class="slide-subtitle">The classic ML failure — training features built one way, inference features another — applies to corpora too, and nothing in the field addresses it</div>
+                </div>
+                <div class="slide-logo">Parity</div>
+            </div>
+
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT IT DOES:</span>
+                        <span class="what-text">Makes one serialised pipeline runnable on a laptop sample, on the cluster at full scale, and against a single record at query time — with the equality of those three enforced by a test rather than assumed.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">If a corpus is normalised one way and inference input another, tokenisation diverges — worst for Indic scripts, where normalisation changes token boundaries. The model is then quietly worse for a reason no log shows.</span>
+                    </div>
+                </div>
+
+                <div class="grid-3" style="height: 58%;">
+                    <div class="card highlight-sky">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">▣</span> 1. Serialise Everything</span>
+                            <span class="tag-pill blue">Pipeline Bundle</span>
+                        </div>
+                        <div class="card-body">
+                            A recipe alone is not enough; every version that can change a result travels with it:
+                            <ul class="feature-list" style="margin-top: 4px; font-size: 11px; line-height: 1.35;">
+                                <li>• Operators, parameters, <code>when:</code> predicates and seeds</li>
+                                <li>• Kernel, model, language-pack and tokenizer versions</li>
+                                <li>• Reference-snapshot ids and the Unicode version behind normalisation</li>
+                                <li>• An environment fingerprint, so two machines cannot disagree silently</li>
+                                <li>• The sample the bundle was validated against</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card highlight-emerald">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">⚖</span> 2. Same Results, Any Machine</span>
+                            <span class="tag-pill green">Bit-Identical</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11px; line-height: 1.35;">
+                                <li>• <strong>Instruction-set parity</strong> means a laptop on AVX2 and a server on AVX-512 produce identical bytes — "it worked on my machine" becomes a testable claim.</li>
+                                <li>• <strong>Deterministic stratified sampling</strong> gives a laptop a representative slice with a recorded seed, not whichever shard happened to be first.</li>
+                                <li>• <strong><code>bundle verify</code></strong> re-runs the bundle against its own sample in the new environment and diffs column by column, naming the operator that diverged.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card highlight-amber">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◉</span> 3. One Record, Same Answer</span>
+                            <span class="tag-pill amber">Serving &amp; RAG</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11px; line-height: 1.35;">
+                                <li>• <strong>An apply path for a single record</strong> shares the operator implementations with the batch engine rather than reimplementing them — which is how skew normally enters a system.</li>
+                                <li>• <strong>The skew test is a gate:</strong> for a fixed sample, batch results equal the concatenation of single-record results, column by column.</li>
+                                <li>• <strong>Corpus-scoped operators refuse</strong> — deduplication and corpus statistics cannot mean anything for one record, so they error by name instead of returning a different answer.</li>
+                                <li>• Evaluation sets and RAG indexing run the same operators, so a benchmark measures the model rather than the pipeline difference.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">Bundle</span><span class="stat-lbl">Recipe, Pins, Environment, Sample</span></div>
+                    <div class="stat-box"><span class="stat-val">AVX2 = AVX-512</span><span class="stat-lbl">Laptop and Cluster, Same Bytes</span></div>
+                    <div class="stat-box"><span class="stat-val">batch = apply</span><span class="stat-lbl">Skew Caught by a Test</span></div>
+                    <div class="stat-box"><span class="stat-val">Eval Parity</span><span class="stat-lbl">Benchmarks Measure the Model</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-13" data-index="12">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2139,8 +2291,8 @@ job.watch_logs()                  <span class="cm"># Live streaming feedback</sp
             </div>
         </div>
 
-        <!-- SLIDE 12: @expand Deep Dive -->
-        <div class="slide" id="slide-12" data-index="11">
+        <!-- SLIDE 14: Deep Dive: @expand Table Functions (1→N Unnesting) -->
+        <div class="slide" id="slide-14" data-index="13">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2176,7 +2328,7 @@ job.watch_logs()                  <span class="cm"># Live streaming feedback</sp
                             <div class="code-container" style="margin-top: 6px;">
                                 <div class="code-header">book_splitter.py · PYTHON</div>
                                 <div class="code-snippet">
-<span class="kw">from</span> mira_curator.sdk <span class="kw">import</span> expand
+<span class="kw">from</span> mira_curate.sdk <span class="kw">import</span> expand
 
 <span class="kw">@expand</span>(returns={<span class="str">"chapter_view"</span>: pa.utf8_view()})
 <span class="kw">def</span> <span class="fn">split_book_chapters</span>(book_doc: mira.Document):
@@ -2234,8 +2386,8 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
             </div>
         </div>
 
-        <!-- SLIDE 13: @actor Deep Dive -->
-        <div class="slide" id="slide-13" data-index="12">
+        <!-- SLIDE 15: Deep Dive: @actor Stateful GPU Workers -->
+        <div class="slide" id="slide-15" data-index="14">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2271,7 +2423,7 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
                             <div class="code-container" style="margin-top: 6px;">
                                 <div class="code-header">indicbert_scorer.py · PYTHON</div>
                                 <div class="code-snippet">
-<span class="kw">from</span> mira_curator.sdk <span class="kw">import</span> actor
+<span class="kw">from</span> mira_curate.sdk <span class="kw">import</span> actor
 
 <span class="kw">@actor</span>(
     returns={<span class="str">"quality_score"</span>: pa.float32()},
@@ -2336,8 +2488,8 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
             </div>
         </div>
 
-        <!-- SLIDE 14: @accumulator Deep Dive -->
-        <div class="slide" id="slide-14" data-index="13">
+        <!-- SLIDE 16: Deep Dive: @accumulator Distributed Reductions -->
+        <div class="slide" id="slide-16" data-index="15">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2373,7 +2525,7 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
                             <div class="code-container" style="margin-top: 6px;">
                                 <div class="code-header">vocab_counter.py · PYTHON</div>
                                 <div class="code-snippet">
-<span class="kw">from</span> mira_curator.sdk <span class="kw">import</span> accumulator
+<span class="kw">from</span> mira_curate.sdk <span class="kw">import</span> accumulator
 <span class="kw">@accumulator</span>(returns={<span class="str">"token"</span>: pa.utf8(), <span class="str">"count"</span>: pa.int64()}, scope=<span class="str">"lang"</span>)
 <span class="kw">class</span> <span class="cls">VocabCounter</span>:
     <span class="kw">def</span> <span class="fn">__init__</span>(self): self._counts = Counter()
@@ -2446,8 +2598,8 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
             </div>
         </div>
 
-        <!-- SLIDE 15: The Curated Corpus as a Queryable Asset: Analytics on Tags -->
-        <div class="slide" id="slide-15" data-index="14">
+        <!-- SLIDE 17: SQL as a Second Interface -->
+        <div class="slide" id="slide-17" data-index="16">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2511,7 +2663,7 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
                             <div class="code-container" style="margin-top: 4px;">
                                 <div class="code-header">corpus_card.py · DATASET CARD REPORT</div>
                                 <div class="code-snippet" style="font-size: 11px; line-height: 1.35;">
-<span class="kw">import</span> mira_curator <span class="kw">as</span> mira
+<span class="kw">import</span> mira_curate <span class="kw">as</span> mira
 
 <span class="cm"># Same UDAF used for dedup index computes audit metrics:</span>
 report = (pipe.group_by(<span class="str">"lang"</span>)   <span class="cm"># fills keys= on the UDAF</span>
@@ -2565,11 +2717,11 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
         </div>
 
         <!-- =========================================================================
-             ACT III: HIGH-PERFORMANCE ENGINE & STORAGE ARCHITECTURE (SLIDES 16 - 21)
+             ACT III: HIGH-PERFORMANCE ENGINE & STORAGE ARCHITECTURE (SLIDES 18 - 24)
              ========================================================================= -->
 
-        <!-- SLIDE 16: Native Engine 5-Plane Core -->
-        <div class="slide" id="slide-16" data-index="15">
+        <!-- SLIDE 18: Native Engine Architecture: The 5-Plane Core -->
+        <div class="slide" id="slide-18" data-index="17">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2683,8 +2835,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
             </div>
         </div>
 
-        <!-- SLIDE 17: Zero-Copy Memory Model -->
-        <div class="slide" id="slide-17" data-index="16">
+        <!-- SLIDE 19: Zero-Copy Memory Model: PyCapsule C Data Interface -->
+        <div class="slide" id="slide-19" data-index="18">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2787,8 +2939,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
             </div>
         </div>
 
-        <!-- SLIDE 18: DPDP Legal Safety -->
-        <div class="slide" id="slide-18" data-index="17">
+        <!-- SLIDE 20: Sovereign Data Governance -->
+        <div class="slide" id="slide-20" data-index="19">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2890,8 +3042,91 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
             </div>
         </div>
 
-        <!-- SLIDE 19: Resilient Ingestion & Incremental Watermarks -->
-        <div class="slide" id="slide-19" data-index="18">
+        <!-- SLIDE 22: Resilient Ingestion, Incremental Watermarks & Stream Pipel -->
+        <div class="slide" id="slide-21" data-index="20">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge engine"><span class="ico" aria-hidden="true">↺</span> Operations</span>
+                        <span class="slide-category">The Unhappy Path</span>
+                        <span class="tag-pill amber">Correction &amp; Recovery</span>
+                    </div>
+                    <h2 class="slide-title">When It Goes Wrong: Restatement, Late Data and Mutable Sources</h2>
+                    <div class="slide-subtitle">A corpus is a living dataset with consumers — the questions that decide whether anyone trusts it in production</div>
+                </div>
+                <div class="slide-logo">Recovery</div>
+            </div>
+
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT IT DOES:</span>
+                        <span class="what-text">Treats the failure cases of a daily pipeline as first-class: a bad tagger that already shipped, data arriving late, sources that change records under you, and dependencies that go down mid-run.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">A wrong dashboard gets noticed. A subtly wrong corpus produces a model that is quietly worse, discovered months later once the compute is spent. Detection is slower here, so correction has to be faster.</span>
+                    </div>
+                </div>
+
+                <div class="grid-3" style="height: 58%;">
+                    <div class="card highlight-amber">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">↺</span> 1. A Bad Tagger Already Shipped</span>
+                            <span class="tag-pill amber">Minutes, Not a Re-run</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11px; line-height: 1.35;">
+                                <li>• <strong>Blast radius is a query.</strong> Operator fingerprints sit in every run manifest and every release, so "which releases used <code>quality@v3</code>?" is a lookup, not an investigation.</li>
+                                <li>• <strong>Roll back by pointer.</strong> Releases are immutable; the dataset alias moves back to the last good snapshot and consumers follow immediately. The bad release is marked <em>revoked</em>, with the reason recorded.</li>
+                                <li>• <strong>Fix forward cheaply.</strong> Bump the operator version and backfill <em>that column only</em>; retraction repairs the affected statistics without rebuilding them.</li>
+                                <li>• <strong>Preview before acting.</strong> A dry run states which columns will be recomputed, over how many rows, at what cost — and what will <em>not</em> be touched.</li>
+                                <li>• <strong>Publish the clock.</strong> Time from detection to consumers-on-good-data is a tracked number, not a belief.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card highlight-sky">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">⏱</span> 2. Late Data &amp; Upserts</span>
+                            <span class="tag-pill blue">Order-Independent</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11px; line-height: 1.35;">
+                                <li>• <strong>Watermarks advance on discovery</strong>, never on a document's own timestamp — so a shard delivered two days late, or a portal republishing old records, is still ingested. Watermarking on <code>fetch_time</code> is the classic way to silently skip data.</li>
+                                <li>• <strong>Upsert is the default.</strong> Positional <code>doc_id</code> means a re-fetch of the same slot updates in place instead of accumulating near-duplicate copies of one page.</li>
+                                <li>• <strong>Changed content re-tags itself.</strong> The content hash is part of the cache key, so an edited document misses the cache while its neighbours do not.</li>
+                                <li>• <strong>Deletes are tombstones</strong>, never silent absences — "removed, and why" is what an audit needs.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card highlight-emerald">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">⚯</span> 3. Dependencies Go Down</span>
+                            <span class="tag-pill green">Degrade, Don't Fail</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11px; line-height: 1.35;">
+                                <li>• <strong>A source that is down is skipped</strong>, its watermark left unmoved, and it is reported — one unavailable portal does not fail a run across forty sources.</li>
+                                <li>• <strong>A source that lies is worse than one that is down.</strong> An empty file or an error page saved as data gets curated cheerfully, so per-source volume deviation is checked before content is trusted.</li>
+                                <li>• <strong>Consumers never see a half-written dataset:</strong> atomic commit plus an alias, so a slow reader cannot block a writer and a writer cannot corrupt a reader.</li>
+                                <li>• <strong>Our own store failing mid-run</strong> costs the unfinished shards only — resume is shard-level and verified by a <code>kill -9</code> test.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">Blast Radius</span><span class="stat-lbl">Fingerprints Make It a Query</span></div>
+                    <div class="stat-box"><span class="stat-val">Alias Rollback</span><span class="stat-lbl">Immutable Releases, Pointer Moves</span></div>
+                    <div class="stat-box"><span class="stat-val">One Column</span><span class="stat-lbl">Backfill Scope of a Correction</span></div>
+                    <div class="stat-box"><span class="stat-val">Tombstones</span><span class="stat-lbl">Deletes Are Recorded, Not Silent</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide" id="slide-22" data-index="21">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2994,8 +3229,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
             </div>
         </div>
 
-        <!-- SLIDE 20: Lance Columnar Storage -->
-        <div class="slide" id="slide-20" data-index="19">
+        <!-- SLIDE 23: Lance Columnar Storage & In-Place Metadata Appends -->
+        <div class="slide" id="slide-23" data-index="22">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3085,8 +3320,8 @@ dataset.add_columns(quality_scores)
             </div>
         </div>
 
-        <!-- SLIDE 21: Cross-Run Stateful Execution & Persistent State Plane -->
-        <div class="slide" id="slide-21" data-index="20">
+        <!-- SLIDE 24: Cross-Run Stateful Execution & Persistent State Plane -->
+        <div class="slide" id="slide-24" data-index="23">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3202,11 +3437,11 @@ dataset.add_columns(quality_scores)
         </div>
 
         <!-- =========================================================================
-             ACT IV: SOVEREIGN INDIC LINGUISTICS & CURATION SCIENCE (SLIDES 22 - 28)
+             ACT IV: SOVEREIGN INDIC LINGUISTICS & CURATION SCIENCE (SLIDES 25 - 31)
              ========================================================================= -->
 
-        <!-- SLIDE 22: 22 Languages & Declarative Language Packs -->
-        <div class="slide" id="slide-22" data-index="21">
+        <!-- SLIDE 25: Sovereign Indic Linguistics -->
+        <div class="slide" id="slide-25" data-index="24">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3302,8 +3537,8 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
             </div>
         </div>
 
-        <!-- SLIDE 23: Krutidev Font Rescue & Sandhi -->
-        <div class="slide" id="slide-23" data-index="22">
+        <!-- SLIDE 26: Sovereign Indic Engineering -->
+        <div class="slide" id="slide-26" data-index="25">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3398,8 +3633,8 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
             </div>
         </div>
 
-        <!-- SLIDE 24: 3-Tier Hierarchical Deduplication -->
-        <div class="slide" id="slide-24" data-index="23">
+        <!-- SLIDE 27: Curation Science: 3-Tier Hierarchical Deduplication -->
+        <div class="slide" id="slide-27" data-index="26">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3511,8 +3746,8 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
             </div>
         </div>
 
-        <!-- SLIDE 25: Multimodal Architecture -->
-        <div class="slide" id="slide-25" data-index="24">
+        <!-- SLIDE 28: Multimodal Architecture -->
+        <div class="slide" id="slide-28" data-index="27">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3612,8 +3847,8 @@ schema = pa.schema([
             </div>
         </div>
 
-        <!-- SLIDE 26: Non-Destructive Curation & Spans -->
-        <div class="slide" id="slide-26" data-index="25">
+        <!-- SLIDE 29: Non-Destructive Curation -->
+        <div class="slide" id="slide-29" data-index="28">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3718,8 +3953,8 @@ schema = pa.schema([
             </div>
         </div>
 
-        <!-- SLIDE 27: Curation Quality Triad: Data Integrity + Content Quality + Safety -->
-        <div class="slide" id="slide-27" data-index="26">
+        <!-- SLIDE 30: Curation Quality Triad -->
+        <div class="slide" id="slide-30" data-index="29">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3836,8 +4071,8 @@ schema = pa.schema([
             </div>
         </div>
 
-        <!-- SLIDE 28: Sovereign Regulatory Compliance & Aadhaar -->
-        <div class="slide" id="slide-28" data-index="27">
+        <!-- SLIDE 31: Sovereign Regulatory Compliance: Aadhaar & Legal Gates -->
+        <div class="slide" id="slide-31" data-index="30">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3935,11 +4170,11 @@ schema = pa.schema([
         </div>
 
         <!-- =========================================================================
-             ACT V: THE 4-MONTH MASTER PLAN (SLIDES 29 - 33)
+             ACT V: THE 4-MONTH MASTER PLAN (SLIDES 32 - 36)
              ========================================================================= -->
 
-        <!-- SLIDE 29: The 4-Month Master Plan (Weeks 1–16) -->
-        <div class="slide" id="slide-29" data-index="28">
+        <!-- SLIDE 32: The 4-Month Master Plan -->
+        <div class="slide" id="slide-32" data-index="31">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3997,7 +4232,7 @@ schema = pa.schema([
                             <div class="code-container" style="margin-bottom: 6px;">
                                 <div class="code-header">CLI RUNNER</div>
                                 <div class="code-snippet">
-$ mira run --exact-dedup \
+$ mira-curate run --exact-dedup \
   --in corpus.parquet \
   --out s3://lance/v1
                                 </div>
@@ -4063,7 +4298,7 @@ $ mira scan --privacy aadhaar,pan \
                             <div class="code-container" style="margin-bottom: 6px;">
                                 <div class="code-header">PRODUCTION PLATFORM DELIVERY</div>
                                 <div class="code-snippet">
-$ mira mix --config llama_anneal.yaml \
+$ mira-curate mix --config llama_anneal.yaml \
   --export megatron_shards \
   --target-rate 7TB_day
                                 </div>
@@ -4098,8 +4333,8 @@ $ mira mix --config llama_anneal.yaml \
             </div>
         </div>
 
-        <!-- SLIDE 30: Month 1 Deep Dive -->
-        <div class="slide" id="slide-30" data-index="29">
+        <!-- SLIDE 33: Month 1 (Weeks 1–4) -->
+        <div class="slide" id="slide-33" data-index="32">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4216,8 +4451,8 @@ pipeline.to_ray(num_workers=<span class="num">64</span>, batch_size=<span class=
             </div>
         </div>
 
-        <!-- SLIDE 31: Month 2 Deep Dive -->
-        <div class="slide" id="slide-31" data-index="30">
+        <!-- SLIDE 34: Month 2 (Weeks 5–8) -->
+        <div class="slide" id="slide-34" data-index="33">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4253,7 +4488,7 @@ pipeline.to_ray(num_workers=<span class="num">64</span>, batch_size=<span class=
                                 <div class="code-header">NOTEBOOK-FIRST CURATION CODE</div>
                                 <div class="code-snippet" style="font-size: 11px; line-height: 1.35;">
 <span class="kw">import</span> pyarrow <span class="kw">as</span> pa, pyarrow.compute <span class="kw">as</span> pc
-<span class="kw">import</span> mira_curator <span class="kw">as</span> mira
+<span class="kw">import</span> mira_curate <span class="kw">as</span> mira
 
 <span class="kw">@mira.tagger</span>(returns={<span class="str">"is_clean"</span>: pa.bool_()})
 <span class="kw">def</span> <span class="fn">devanagari_density</span>(batch: pa.RecordBatch) -> pa.RecordBatch:
@@ -4316,8 +4551,8 @@ pipeline.to_ray(num_workers=<span class="num">64</span>, batch_size=<span class=
             </div>
         </div>
 
-        <!-- SLIDE 32: Month 3 Deep Dive -->
-        <div class="slide" id="slide-32" data-index="31">
+        <!-- SLIDE 35: Month 3 (Weeks 9–12) -->
+        <div class="slide" id="slide-35" data-index="34">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4412,8 +4647,8 @@ pipeline.to_ray(num_workers=<span class="num">64</span>, batch_size=<span class=
             </div>
         </div>
 
-        <!-- SLIDE 33: Month 4 Deep Dive -->
-        <div class="slide" id="slide-33" data-index="32">
+        <!-- SLIDE 36: Month 4 (Weeks 13–16) -->
+        <div class="slide" id="slide-36" data-index="35">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4459,6 +4694,7 @@ mixture_schedule:
                             <ul class="feature-list">
                                 <li>• <strong>Proxy evaluation:</strong> 125M–1B proxy runs compare curation recipes before large training runs (evaluated as compute budget permits).</li>
                                 <li>• <strong>Lineage Ledger:</strong> SHA-256 manifests ensure 100% reproducible training shards.</li>
+                                <li>• <strong>Delta + Replay Mixtures:</strong> A refresh selects what arrived since the last model and blends a replay sample of the older corpus, deduplicated against history — the assembly step continual pretraining needs, without anyone hand-rolling it.</li>
                             </ul>
                         </div>
                     </div>
@@ -4510,11 +4746,11 @@ mixture_schedule:
         </div>
 
         <!-- =========================================================================
-             ACT VI: ECONOMICS, TOPOLOGY, CAPABILITY PILLARS & KICKOFF (SLIDES 34 - 39)
+             ACT VI: ECONOMICS, TOPOLOGY, CAPABILITY PILLARS & KICKOFF (SLIDES 37 - 42)
              ========================================================================= -->
 
-        <!-- SLIDE 34: Hardware Economics: Sizing an Efficient ~7 TB/day Cluster -->
-        <div class="slide" id="slide-34" data-index="33">
+        <!-- SLIDE 37: Hardware Economics: Sizing an Efficient ~7 TB/day Cluster -->
+        <div class="slide" id="slide-37" data-index="36">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4625,8 +4861,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 35: End-to-End Production Topology -->
-        <div class="slide" id="slide-35" data-index="34">
+        <!-- SLIDE 38: End-to-End Production Topology -->
+        <div class="slide" id="slide-38" data-index="37">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4747,8 +4983,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 36: Master Capability Checklist (Part 1: Pillars 1 - 11) -->
-        <div class="slide" id="slide-36" data-index="35">
+        <!-- SLIDE 39: Master Capability Checklist -->
+        <div class="slide" id="slide-39" data-index="38">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4887,8 +5123,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 37: Master Capability Checklist (Part 2: Pillars 12 - 22) -->
-        <div class="slide" id="slide-37" data-index="36">
+        <!-- SLIDE 40: Master Capability Checklist -->
+        <div class="slide" id="slide-40" data-index="39">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5027,8 +5263,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 38: Cross-Cutting Runtime Guarantees -->
-        <div class="slide" id="slide-38" data-index="37">
+        <!-- SLIDE 41: Cross-Cutting Runtime Guarantees -->
+        <div class="slide" id="slide-41" data-index="40">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5134,8 +5370,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 39: Conclusion & Sprint 1 Kickoff -->
-        <div class="slide" id="slide-39" data-index="38">
+        <!-- SLIDE 45: Working Assumptions and the Risks We Are Tracking -->
+        <div class="slide" id="slide-42" data-index="41">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5225,7 +5461,7 @@ mixture_schedule:
             </div>
         </div>
 
-        <div class="slide" id="slide-40" data-index="39">
+        <div class="slide" id="slide-43" data-index="42">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5306,7 +5542,7 @@ mixture_schedule:
             </div>
         </div>
 
-        <div class="slide" id="slide-41" data-index="40">
+        <div class="slide" id="slide-44" data-index="43">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5388,7 +5624,7 @@ mixture_schedule:
             </div>
         </div>
 
-        <div class="slide" id="slide-42" data-index="41">
+        <div class="slide" id="slide-45" data-index="44">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5476,7 +5712,7 @@ mixture_schedule:
             <div class="controls-left">
                 <button class="nav-btn" id="prevBtn" aria-label="Previous slide"><span class="ico" aria-hidden="true">‹</span> Previous</button>
                 <button class="nav-btn primary-btn" id="nextBtn" aria-label="Next slide">Next <span class="ico" aria-hidden="true">›</span></button>
-                <span class="slide-counter" id="slideCounter">1 / 42</span>
+                <span class="slide-counter" id="slideCounter">1 / 45</span>
             </div>
 
             <div class="kb-hints">
