@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIRA Curator: Unified 5-Plane Architecture & Master Engineering Plan</title>
-    <meta name="mira-build" content="2026-09-22-afd6914a">
+    <meta name="mira-build" content="2026-09-23-a7986dc5">
     <!-- Self-contained: no external fonts, icons or scripts (works offline / air-gapped) -->
 
     <style>
@@ -1350,23 +1350,23 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
       <path d="M690 188 L690 204" style="stroke:var(--text-muted); stroke-width:1.5;"/>
       <rect x="8" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="20" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Incremental engine</text>
-      <text x="20" y="246" font-size="11.5" style="fill:var(--text-secondary);">backfill by fingerprint</text>
+      <text x="20" y="262" font-size="11.5" style="fill:var(--text-secondary);">backfill by fingerprint</text>
       <text x="20" y="262" font-size="11.5" style="fill:var(--text-secondary);">stateful ops absorb the delta</text>
       <rect x="282" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="294" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Indic kernels</text>
-      <text x="294" y="246" font-size="11.5" style="fill:var(--text-secondary);">NFC that keeps Mn / Mc</text>
+      <text x="294" y="262" font-size="11.5" style="fill:var(--text-secondary);">NFC that keeps Mn / Mc</text>
       <text x="294" y="262" font-size="11.5" style="fill:var(--text-secondary);">scalar = AVX2 = AVX-512, tested</text>
       <rect x="556" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="568" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Non-destructive model</text>
-      <text x="568" y="246" font-size="11.5" style="fill:var(--text-secondary);">tag &rarr; select &rarr; materialise</text>
+      <text x="568" y="262" font-size="11.5" style="fill:var(--text-secondary);">tag &rarr; select &rarr; materialise</text>
       <text x="568" y="262" font-size="11.5" style="fill:var(--text-secondary);">one tag table per operator</text>
       <rect x="830" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="842" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Provenance</text>
-      <text x="842" y="246" font-size="11.5" style="fill:var(--text-secondary);">licence, consent, opt-out per row</text>
+      <text x="842" y="262" font-size="11.5" style="fill:var(--text-secondary);">licence, consent, opt-out per row</text>
       <text x="842" y="262" font-size="11.5" style="fill:var(--text-secondary);">deletion propagates downstream</text>
       <rect x="1104" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="1116" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Operability</text>
-      <text x="1116" y="246" font-size="11.5" style="fill:var(--text-secondary);">records first · checkpoint</text>
+      <text x="1116" y="262" font-size="11.5" style="fill:var(--text-secondary);">records first · checkpoint</text>
       <text x="1116" y="262" font-size="11.5" style="fill:var(--text-secondary);">drain · support bundle</text>
     </svg>
                 </div>
@@ -4240,7 +4240,7 @@ schema = pa.schema([
             <div class="slide-content">
                 <div style="flex: 1; min-height: 0; display: flex; align-items: center;">
                     <svg viewBox="0 0 1380 530" width="100%" style="height:100%; display:block;" role="img" aria-label="An integrity gate above a cascade in which each stage costs more per document and sees fewer of them">
-      <defs><marker id="a32" markerWidth="8" markerHeight="8" refX="7" refY="3.6" orient="auto"><path d="M0,0 L8,3.6 L0,7.2 z" style="fill:var(--text-muted);"/></marker></defs>
+      <defs><marker id="a32" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="10" refX="10" refY="5" orient="auto"><path d="M0,0 L11,5 L0,10 z" style="fill:var(--text-muted);"/></marker></defs>
 
       <rect x="8" y="4" width="1364" height="92" rx="9" style="fill:var(--accent-sky); fill-opacity:0.05; stroke:var(--accent-sky); stroke-opacity:0.35;"/>
       <text x="16" y="26" font-size="14.5" font-weight="700" style="fill:var(--accent-sky);">Pillar 1 &mdash; Integrity: does the data still have the shape we agreed on?</text>
@@ -4258,34 +4258,47 @@ schema = pa.schema([
       <text x="1044" y="74" font-size="11.5" style="fill:var(--text-secondary);">parent/child span relations still hold</text>
 
       <text x="16" y="136" font-size="14.5" font-weight="700" style="fill:var(--text-primary);">Pillar 2 and 3 as one cascade &mdash; the cheapest test that can settle a document runs first, so the expensive ones see far fewer</text>
-      <text x="16" y="158" font-size="12.5" style="fill:var(--text-secondary);">Height is how many documents reach that stage; the ordering is a planner rule, not a hand-written pipeline.</text>
-      <rect x="16" y="208" width="252" height="132" rx="7" style="fill:var(--text-muted); fill-opacity:0.16; stroke:var(--text-muted); stroke-opacity:0.6;"/>
-      <text x="28" y="198" font-size="13.5" font-weight="700" style="fill:var(--text-muted);">Everything ingested</text>
-      <text x="28" y="364" font-size="11.5" style="fill:var(--text-secondary);">every document carries its</text>
-      <text x="28" y="383" font-size="11.5" style="fill:var(--text-secondary);">tags forward, none dropped</text>
-      <path d="M271 320 L292 320" style="stroke:var(--text-muted); stroke-width:2;" marker-end="url(#a32)"/>
-      <rect x="298" y="240" width="252" height="100" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.16; stroke:var(--accent-emerald); stroke-opacity:0.6;"/>
-      <text x="310" y="230" font-size="13.5" font-weight="700" style="fill:var(--accent-emerald);">1 &middot; CPU heuristics</text>
-      <text x="310" y="364" font-size="11.5" style="fill:var(--text-secondary);">script ratio (0.65 for hin_Deva),</text>
-      <text x="310" y="383" font-size="11.5" style="fill:var(--text-secondary);">repetition loops, length bounds</text>
-      <text x="310" y="402" font-size="11.5" style="fill:var(--text-secondary);">target under 0.1 ms per document</text>
-      <path d="M553 320 L574 320" style="stroke:var(--text-muted); stroke-width:2;" marker-end="url(#a32)"/>
-      <rect x="580" y="276" width="252" height="64" rx="7" style="fill:var(--accent-amber); fill-opacity:0.16; stroke:var(--accent-amber); stroke-opacity:0.6;"/>
-      <text x="592" y="266" font-size="13.5" font-weight="700" style="fill:var(--accent-amber);">2 &middot; Neural scoring</text>
-      <text x="592" y="364" font-size="11.5" style="fill:var(--text-secondary);">IndicBERT pseudo-perplexity,</text>
-      <text x="592" y="383" font-size="11.5" style="fill:var(--text-secondary);">resident, target under 5 ms;</text>
-      <text x="592" y="402" font-size="11.5" style="fill:var(--text-secondary);">percentiles keep rare languages</text>
-      <path d="M835 320 L856 320" style="stroke:var(--text-muted); stroke-width:2;" marker-end="url(#a32)"/>
-      <rect x="862" y="300" width="252" height="40" rx="7" style="fill:var(--accent-purple); fill-opacity:0.16; stroke:var(--accent-purple); stroke-opacity:0.6;"/>
-      <text x="874" y="290" font-size="13.5" font-weight="700" style="fill:var(--accent-purple);">3 &middot; Safety &amp; compliance</text>
-      <text x="874" y="364" font-size="11.5" style="fill:var(--text-secondary);">Aadhaar Verhoeff, PAN format,</text>
-      <text x="874" y="383" font-size="11.5" style="fill:var(--text-secondary);">Indic safety classifiers,</text>
-      <text x="874" y="402" font-size="11.5" style="fill:var(--text-secondary);">13-gram decontamination</text>
-      <rect x="1144" y="300" width="220" height="40" rx="7" style="fill:var(--accent-teal); fill-opacity:0.20; stroke:var(--accent-teal); stroke-opacity:0.7;"/>
-      <text x="1156" y="326" font-size="13" font-weight="700" style="fill:var(--accent-teal);">high-signal shards</text>
-      <text x="1156" y="364" font-size="11.5" style="fill:var(--text-secondary);">what a .select() keeps,</text>
-      <text x="1156" y="383" font-size="11.5" style="fill:var(--text-secondary);">with the decision</text>
-      <text x="1156" y="402" font-size="11.5" style="fill:var(--text-secondary);">recorded on the row</text>
+      <text x="16" y="158" font-size="12.5" style="fill:var(--text-secondary);">The arrows thin along the cascade: each stage settles most of what reaches it. The ordering is a planner rule, not a hand-written pipeline.</text>
+
+      <rect x="16" y="206" width="252" height="120" rx="7" style="fill:var(--text-muted); fill-opacity:0.14; stroke:var(--text-muted); stroke-opacity:0.6;"/>
+      <text x="32" y="234" font-size="13.5" font-weight="700" style="fill:var(--text-primary);">Everything ingested</text>
+      <text x="32" y="262" font-size="11.5" style="fill:var(--text-secondary);">every document carries its</text>
+      <text x="32" y="281" font-size="11.5" style="fill:var(--text-secondary);">tags forward, none dropped</text>
+
+      <path d="M272 266 L288 266" style="stroke:var(--text-muted); stroke-width:4.5;" marker-end="url(#a32)"/>
+
+      <rect x="298" y="206" width="252" height="120" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.14; stroke:var(--accent-emerald); stroke-opacity:0.6;"/>
+      <text x="314" y="234" font-size="13.5" font-weight="700" style="fill:var(--accent-emerald);">1 &middot; CPU heuristics</text>
+      <text x="314" y="262" font-size="11.5" style="fill:var(--text-secondary);">script ratio (0.65 for hin_Deva),</text>
+      <text x="314" y="281" font-size="11.5" style="fill:var(--text-secondary);">repetition loops, length bounds</text>
+      <text x="314" y="300" font-size="11.5" style="fill:var(--text-secondary);">target under 0.1 ms per document</text>
+
+      <path d="M554 266 L570 266" style="stroke:var(--text-muted); stroke-width:3.4;" marker-end="url(#a32)"/>
+
+      <rect x="580" y="206" width="252" height="120" rx="7" style="fill:var(--accent-amber); fill-opacity:0.14; stroke:var(--accent-amber); stroke-opacity:0.6;"/>
+      <text x="596" y="234" font-size="13.5" font-weight="700" style="fill:var(--accent-amber);">2 &middot; Neural scoring</text>
+      <text x="596" y="262" font-size="11.5" style="fill:var(--text-secondary);">IndicBERT pseudo-perplexity,</text>
+      <text x="596" y="281" font-size="11.5" style="fill:var(--text-secondary);">resident, target under 5 ms;</text>
+      <text x="596" y="300" font-size="11.5" style="fill:var(--text-secondary);">percentiles keep rare languages</text>
+
+      <path d="M836 266 L852 266" style="stroke:var(--text-muted); stroke-width:2.4;" marker-end="url(#a32)"/>
+
+      <rect x="862" y="206" width="252" height="120" rx="7" style="fill:var(--accent-purple); fill-opacity:0.14; stroke:var(--accent-purple); stroke-opacity:0.6;"/>
+      <text x="878" y="234" font-size="13.5" font-weight="700" style="fill:var(--accent-purple);">3 &middot; Safety &amp; compliance</text>
+      <text x="878" y="262" font-size="11.5" style="fill:var(--text-secondary);">Aadhaar Verhoeff, PAN format,</text>
+      <text x="878" y="281" font-size="11.5" style="fill:var(--text-secondary);">Indic safety classifiers,</text>
+      <text x="878" y="300" font-size="11.5" style="fill:var(--text-secondary);">13-gram decontamination</text>
+
+      <path d="M1118 266 L1134 266" style="stroke:var(--text-muted); stroke-width:1.6;" marker-end="url(#a32)"/>
+
+      <rect x="1144" y="206" width="220" height="120" rx="7" style="fill:var(--accent-teal); fill-opacity:0.18; stroke:var(--accent-teal); stroke-opacity:0.7;"/>
+      <text x="1160" y="234" font-size="13.5" font-weight="700" style="fill:var(--accent-teal);">high-signal shards</text>
+      <text x="1160" y="262" font-size="11.5" style="fill:var(--text-secondary);">what a .select() keeps,</text>
+      <text x="1160" y="281" font-size="11.5" style="fill:var(--text-secondary);">with the decision</text>
+      <text x="1160" y="300" font-size="11.5" style="fill:var(--text-secondary);">recorded on the row</text>
+
+      <text x="16" y="362" font-size="12" style="fill:var(--text-muted);">Nothing here is a measured survival rate &mdash; the shape says the order and the relative cost, and #24a is what puts numbers on it.</text>
+
       <rect x="8" y="428" width="672" height="96" rx="9" style="fill:var(--accent-emerald); fill-opacity:0.08; stroke:var(--accent-emerald); stroke-opacity:0.45;"/>
       <text x="26" y="454" font-size="14" font-weight="700" style="fill:var(--accent-emerald);">Nothing above deletes anything</text>
       <text x="26" y="478" font-size="12.5" style="fill:var(--text-secondary);">Every stage writes a tag. Selection, later and separately, decides what enters a</text>
