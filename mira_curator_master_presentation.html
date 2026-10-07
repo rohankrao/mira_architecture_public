@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIRA Curator: Unified 5-Plane Architecture & Master Engineering Plan</title>
-    <meta name="mira-build" content="2026-09-23-a7986dc5">
+    <title>mira-curate: Unified 5-Plane Architecture & Master Engineering Plan</title>
+    <meta name="mira-build" content="2026-10-07-e27a6126">
     <!-- Self-contained: no external fonts, icons or scripts (works offline / air-gapped) -->
 
     <style>
@@ -1016,7 +1016,7 @@
              ACT I: THE STRATEGIC NECESSITY & SYSTEMS FOUNDATIONS (SLIDES 1 - 9)
              ========================================================================= -->
 
-        <!-- SLIDE 1: MIRA Curator: Architecture & Master Plan -->
+        <!-- SLIDE 1: mira-curate: Architecture & Master Plan -->
         <div class="slide active" id="slide-1" data-index="0">
             <div class="slide-header">
                 <div class="slide-header-text">
@@ -1026,7 +1026,7 @@
                         <span class="slide-category">Master Architecture & 4-Month Plan</span>
                         <span class="slide-badge dx"><span class="ico" aria-hidden="true">‹›</span> Python-First DX</span>
                     </div>
-                    <h1 class="slide-title">MIRA Curator: Architecture & Master Plan</h1>
+                    <h1 class="slide-title">mira-curate: Architecture & Master Plan</h1>
                     <div class="slide-subtitle">A Fast, Intuitive, Multimodal & Indic Curation Platform for India's Foundation AI Models</div>
                 </div>
                 <div class="slide-logo">MIRA Engine</div>
@@ -1342,7 +1342,7 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
       <text x="1116" y="42" font-size="11.5" style="fill:var(--text-secondary);">Parquet · Lance</text>
       <text x="1116" y="58" font-size="11.5" style="fill:var(--text-secondary);">Iceberg · DuckDB</text>
       <rect x="8" y="82" width="1364" height="30" rx="6" style="fill:var(--accent-indigo); fill-opacity:0.08; stroke:var(--accent-indigo); stroke-opacity:0.35; stroke-dasharray:5 4;"/>
-      <text x="690" y="102" text-anchor="middle" font-size="12" font-weight="700" style="fill:var(--accent-indigo);">mira.from_hf · from_fasttext · from_gliner · from_spacy · from_llm · from_datatrove · from_cureta · from_synthia &mdash; one call each, no forks</text>
+      <text x="690" y="102" text-anchor="middle" font-size="12" font-weight="700" style="fill:var(--accent-indigo);">mira.from_hf · from_fasttext · from_gliner · from_spacy · from_llm · any plain function · from_synthia &mdash; one call each, no forks</text>
       <rect x="8" y="124" width="1364" height="64" rx="8" style="fill:var(--accent-purple); fill-opacity:0.12; stroke:var(--accent-purple); stroke-opacity:0.55;"/>
       <text x="690" y="148" text-anchor="middle" font-size="13.5" font-weight="700" style="fill:var(--accent-purple);">One Arrow batch · one data model · one manifest</text>
       <text x="690" y="170" text-anchor="middle" font-size="11.5" style="fill:var(--text-secondary);">positional doc_id · content hash · operator fingerprint · DLQ · watermark · release version</text>
@@ -1350,23 +1350,23 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
       <path d="M690 188 L690 204" style="stroke:var(--text-muted); stroke-width:1.5;"/>
       <rect x="8" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="20" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Incremental engine</text>
-      <text x="20" y="262" font-size="11.5" style="fill:var(--text-secondary);">backfill by fingerprint</text>
+      <text x="20" y="246" font-size="11.5" style="fill:var(--text-secondary);">backfill by fingerprint</text>
       <text x="20" y="262" font-size="11.5" style="fill:var(--text-secondary);">stateful ops absorb the delta</text>
       <rect x="282" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="294" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Indic kernels</text>
-      <text x="294" y="262" font-size="11.5" style="fill:var(--text-secondary);">NFC that keeps Mn / Mc</text>
+      <text x="294" y="246" font-size="11.5" style="fill:var(--text-secondary);">NFC that keeps Mn / Mc</text>
       <text x="294" y="262" font-size="11.5" style="fill:var(--text-secondary);">scalar = AVX2 = AVX-512, tested</text>
       <rect x="556" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="568" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Non-destructive model</text>
-      <text x="568" y="262" font-size="11.5" style="fill:var(--text-secondary);">tag &rarr; select &rarr; materialise</text>
+      <text x="568" y="246" font-size="11.5" style="fill:var(--text-secondary);">tag &rarr; select &rarr; materialise</text>
       <text x="568" y="262" font-size="11.5" style="fill:var(--text-secondary);">one tag table per operator</text>
       <rect x="830" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="842" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Provenance</text>
-      <text x="842" y="262" font-size="11.5" style="fill:var(--text-secondary);">licence, consent, opt-out per row</text>
+      <text x="842" y="246" font-size="11.5" style="fill:var(--text-secondary);">licence, consent, opt-out per row</text>
       <text x="842" y="262" font-size="11.5" style="fill:var(--text-secondary);">deletion propagates downstream</text>
       <rect x="1104" y="208" width="268" height="62" rx="7" style="fill:var(--accent-emerald); fill-opacity:0.10; stroke:var(--accent-emerald); stroke-opacity:0.55;"/>
       <text x="1116" y="228" font-size="12.5" font-weight="700" style="fill:var(--accent-emerald);">Operability</text>
-      <text x="1116" y="262" font-size="11.5" style="fill:var(--text-secondary);">records first · checkpoint</text>
+      <text x="1116" y="246" font-size="11.5" style="fill:var(--text-secondary);">records first · checkpoint</text>
       <text x="1116" y="262" font-size="11.5" style="fill:var(--text-secondary);">drain · support bundle</text>
     </svg>
                 </div>
@@ -1377,7 +1377,7 @@ preview_df = pipe.preview(<span class="num">5</span>)  <span class="cm"># Instan
                         <div class="code-snippet" style="font-size: 11.5px; line-height: 1.45;"><span class="kw">import</span> mira_curate <span class="kw">as</span> mira
 
 pipe = (mira.<span class="fn">read</span>(<span class="str">"s3://bharat-crawl/*.parquet"</span>)
-        .<span class="fn">tag</span>(mira.<span class="fn">from_datatrove</span>(GopherQualityFilter()))  <span class="cm"># their filter, our tag table</span>
+        .<span class="fn">tag</span>(gopher_keep)  <span class="cm"># their filter in a plain function, our tag table</span>
         .<span class="fn">tag</span>(mira.<span class="fn">from_fasttext</span>(<span class="str">"glotlid.bin"</span>))              <span class="cm"># their model, our LID ensemble</span>
         .<span class="fn">dedup</span>(exact=<span class="kw">True</span>, minhash=<span class="num">0.8</span>))                    <span class="cm"># semantic on demand</span></div>
                     </div>
@@ -1405,107 +1405,8 @@ pipe = (mira.<span class="fn">read</span>(<span class="str">"s3://bharat-crawl/*
             </div>
         </div>
 
-        <!-- SLIDE 5: Genesis: Harmonizing Our Foundational Codebases -->
+        <!-- SLIDE 5: Where the Time and the Disk Actually Go -->
         <div class="slide" id="slide-5" data-index="4">
-            <div class="slide-header">
-                <div class="slide-header-text">
-                    <div class="slide-meta">
-                        <span class="slide-badge"><span class="ico" aria-hidden="true">⑂</span> Systems Genesis</span>
-                        <span class="slide-category">Architectural Foundations</span>
-                    </div>
-                    <h2 class="slide-title">Genesis: Harmonizing Our Foundational Codebases</h2>
-                    <div class="slide-subtitle">Combining cureta's intuitive Python orchestration with mira-kernels' high-throughput SIMD vector engine</div>
-                </div>
-                <div class="slide-logo">Project Origins</div>
-            </div>
-
-            <div class="slide-content">
-                <div class="what-why-strip">
-                    <div class="what-box">
-                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT IT DOES:</span>
-                        <span class="what-text">Unifies two foundational internal systems: cureta's high-level pipeline authoring and mira-kernels' high-speed native Rust SIMD operators.</span>
-                    </div>
-                    <div class="why-box">
-                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
-                        <span class="why-text">Researchers benefit from Python's intuitive notebook ergonomics, while the ~7 TB/day planning figure demands native systems execution. MIRA V2 delivers both.</span>
-                    </div>
-                </div>
-
-                <!-- Visual Equation Ribbon -->
-                <div class="flow-diagram" style="margin-bottom: 8px;">
-                    <div class="flow-step" style="border-color: rgba(56, 189, 248, 0.4);">
-                        <div class="flow-step-title" style="color: #38BDF8;"><span class="ico" aria-hidden="true">◆</span> Foundation 1: mira-curator (cureta)</div>
-                        <div class="flow-step-desc">Intuitive Python Pipeline & Taggers</div>
-                    </div>
-                    <div class="flow-arrow" style="font-size: 16px; font-weight: 700; color: var(--accent-primary);">+</div>
-                    <div class="flow-step" style="border-color: rgba(245, 158, 11, 0.4);">
-                        <div class="flow-step-title" style="color: #FBBF24;"><span class="ico" aria-hidden="true">▣</span> Foundation 2: mira-kernels</div>
-                        <div class="flow-step-desc">Rust SIMD Vector Kernels</div>
-                    </div>
-                    <div class="flow-arrow" style="font-size: 16px; font-weight: 700; color: var(--accent-emerald);">=</div>
-                    <div class="flow-step active" style="border-color: rgba(16, 185, 129, 0.5);">
-                        <div class="flow-step-title" style="color: #34D399;"><span class="ico" aria-hidden="true">▲</span> MIRA V2 Unified Engine</div>
-                        <div class="flow-step-desc">PyCapsule Zero-Copy FFI Bridge</div>
-                    </div>
-                </div>
-
-                <div class="grid-2" style="height: 52%;">
-                    <div class="card highlight-sky">
-                        <div class="card-header">
-                            <span class="card-title"><span class="ico" aria-hidden="true">🐍</span> Foundation 1: mira-curator (cureta)</span>
-                            <span class="tag-pill blue">Python Framework</span>
-                        </div>
-                        <div class="card-body">
-                            <strong>Origin:</strong> High-level Python orchestration framework.<br>
-                            <strong>Key Contributions:</strong> Established intuitive pipeline ergonomics, modular tagger abstractions, and an extensive catalog of Indic NLP filters.<br>
-                            <strong>Architectural Opportunity:</strong> Interpreter dispatch on row-level loops benefits from native SIMD batching when processing 10+ TB datasets.
-                            <div class="code-container" style="margin-top: 6px;">
-                                <div class="code-header">cureta_pipeline.py · PYTHON ORCHESTRATION</div>
-                                <div class="code-snippet">
-<span class="cm"># Elegant pipeline and tagger ergonomics pioneered in cureta</span>
-<span class="kw">for</span> batch <span class="kw">in</span> dataset.iter_batches():
-    <span class="kw">if</span> indic_filter.check(batch):
-        catalog.append_tags(batch)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card highlight-amber">
-                        <div class="card-header">
-                            <span class="card-title"><span class="ico" aria-hidden="true">⚙</span> Foundation 2: mira-kernels</span>
-                            <span class="tag-pill amber">Native Systems Engine</span>
-                        </div>
-                        <div class="card-body">
-                            <strong>Origin:</strong> High-speed Rust and C++ SIMD vector routines.<br>
-                            <strong>Key Contributions:</strong> Native SIMD vectorization, AVX2/NEON intrinsics, zero-copy Arrow memory, and multi-threaded scaling.<br>
-                            <strong>Architectural Opportunity:</strong> Required low-level C++/Rust authoring; benefited from a researcher-friendly Python interface.
-                            <div class="code-container" style="margin-top: 6px;">
-                                <div class="code-header">mira_kernel.rs · RUST SIMD VECTOR KERNEL</div>
-                                <div class="code-snippet">
-<span class="cm">// Native SIMD vector execution on CPU vector registers</span>
-<span class="kw">pub fn</span> <span class="fn">filter_simd</span>(batch: &<span class="cls">RecordBatch</span>) -> <span class="cls">RecordBatch</span> {
-    <span class="cm">// AVX2 256-bit / ARM NEON 128-bit SIMD vector execution</span>
-}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card highlight-teal" style="flex: 0 0 auto; margin-top: 8px;">
-                    <div class="card-body" style="padding: 8px 14px; display: flex; align-items: center; gap: 12px;">
-                        <span class="tag-pill green" style="flex-shrink: 0;"><span class="ico" aria-hidden="true">⚭</span> The Synthesis</span>
-                        <div style="font-size: 12.5px; color: var(--text-primary);">
-                            MIRA V2 brings cureta's intuitive tagger abstractions and researcher ergonomics directly onto mira-kernels' native SIMD engine. Researchers write idiomatic Python; MIRA executes at native hardware speed via zero-copy Arrow PyCapsule pointers.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- SLIDE 6: Where the Time and the Disk Actually Go -->
-        <div class="slide" id="slide-6" data-index="5">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1637,8 +1538,8 @@ pipe = (mira.<span class="fn">read</span>(<span class="str">"s3://bharat-crawl/*
             </div>
         </div>
 
-        <!-- SLIDE 7: The Expensive Resources Sit Idle -->
-        <div class="slide" id="slide-7" data-index="6">
+        <!-- SLIDE 6: The Expensive Resources Sit Idle -->
+        <div class="slide" id="slide-6" data-index="5">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1751,7 +1652,7 @@ pipe = (mira.<span class="fn">read</span>(<span class="str">"s3://bharat-crawl/*
             </div>
         </div>
 
-                <div class="slide" id="slide-8" data-index="7">
+                <div class="slide" id="slide-7" data-index="6">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1848,8 +1749,8 @@ pipe = (mira.<span class="fn">read</span>(<span class="str">"s3://bharat-crawl/*
             </div>
         </div>
 
-        <!-- SLIDE 9: Systems Rosetta Stone: Data Processing Patterns -->
-        <div class="slide" id="slide-9" data-index="8">
+        <!-- SLIDE 8: Systems Rosetta Stone: Data Processing Patterns -->
+        <div class="slide" id="slide-8" data-index="7">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -1948,8 +1849,8 @@ pipe = (mira.<span class="fn">read</span>(<span class="str">"s3://bharat-crawl/*
             </div>
         </div>
 
-        <!-- SLIDE 10: Hardware Acceleration: SIMD Vector Registers -->
-        <div class="slide" id="slide-10" data-index="9">
+        <!-- SLIDE 9: Hardware Acceleration: SIMD Vector Registers -->
+        <div class="slide" id="slide-9" data-index="8">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2062,8 +1963,8 @@ pipe = (mira.<span class="fn">read</span>(<span class="str">"s3://bharat-crawl/*
              ACT II: PYTHON-FIRST DEVELOPER EXPERIENCE (SLIDES 10 - 17)
              ========================================================================= -->
 
-        <!-- SLIDE 11: The ML Researcher & Linguist Journey -->
-        <div class="slide" id="slide-11" data-index="10">
+        <!-- SLIDE 10: The ML Researcher & Linguist Journey -->
+        <div class="slide" id="slide-10" data-index="9">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2153,8 +2054,8 @@ preview_df = pipe.preview(n=<span class="num">5</span>)  <span class="cm"># Inst
             </div>
         </div>
 
-        <!-- SLIDE 12: DX Architecture -->
-        <div class="slide" id="slide-12" data-index="11">
+        <!-- SLIDE 11: DX Architecture -->
+        <div class="slide" id="slide-11" data-index="10">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2171,7 +2072,7 @@ preview_df = pipe.preview(n=<span class="num">5</span>)  <span class="cm"># Inst
                 <div class="what-why-strip">
                     <div class="what-box">
                         <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT IT DOES:</span>
-                        <span class="what-text">Progressive disclosure: users write ordinary typed Python callables without decorators, or use one-line library adapters (<code>from_hf</code>, <code>from_cureta</code>). Arrow RecordBatches are an opt-in expert tier for kernel speed.</span>
+                        <span class="what-text">Progressive disclosure: users write ordinary typed Python callables without decorators, or use one-line library adapters (<code>from_hf</code>, <code>from_fasttext</code>). Arrow RecordBatches are an opt-in expert tier for kernel speed.</span>
                     </div>
                     <div class="why-box">
                         <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
@@ -2244,7 +2145,7 @@ job.watch_logs()                  <span class="cm"># Live streaming feedback</sp
                     </div>
                     <div class="stat-box">
                         <span class="stat-val">Zero Wrappers</span>
-                        <span class="stat-lbl">HF, spaCy, fastText, cureta</span>
+                        <span class="stat-lbl">HF, spaCy, fastText, GLiNER</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-val">Deploy Anywhere</span>
@@ -2258,8 +2159,8 @@ job.watch_logs()                  <span class="cm"># Live streaming feedback</sp
             </div>
         </div>
 
-        <!-- SLIDE 13: One Bundle, Three Places -->
-        <div class="slide" id="slide-13" data-index="12">
+        <!-- SLIDE 12: One Bundle, Three Places -->
+        <div class="slide" id="slide-12" data-index="11">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2338,7 +2239,7 @@ job.watch_logs()                  <span class="cm"># Live streaming feedback</sp
             </div>
         </div>
 
-                <div class="slide" id="slide-14" data-index="13">
+                <div class="slide" id="slide-13" data-index="12">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2477,8 +2378,8 @@ job.watch_logs()                  <span class="cm"># Live streaming feedback</sp
             </div>
         </div>
 
-        <!-- SLIDE 15: Deep Dive: @expand Table Functions (1→N Unnesting) -->
-        <div class="slide" id="slide-15" data-index="14">
+        <!-- SLIDE 14: Deep Dive: @expand Table Functions (1→N Unnesting) -->
+        <div class="slide" id="slide-14" data-index="13">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2572,8 +2473,8 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
             </div>
         </div>
 
-        <!-- SLIDE 16: Deep Dive: @actor Stateful GPU Workers -->
-        <div class="slide" id="slide-16" data-index="15">
+        <!-- SLIDE 15: Deep Dive: @actor Stateful GPU Workers -->
+        <div class="slide" id="slide-15" data-index="14">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2674,8 +2575,8 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
             </div>
         </div>
 
-        <!-- SLIDE 17: Deep Dive: @accumulator Distributed Reductions -->
-        <div class="slide" id="slide-17" data-index="16">
+        <!-- SLIDE 16: Deep Dive: @accumulator Distributed Reductions -->
+        <div class="slide" id="slide-16" data-index="15">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2784,8 +2685,8 @@ corpus.apply(split_book_chapters).to_lance(<span class="str">"s3://mira-corpus/c
             </div>
         </div>
 
-        <!-- SLIDE 18: SQL as a Second Interface -->
-        <div class="slide" id="slide-18" data-index="17">
+        <!-- SLIDE 17: SQL as a Second Interface -->
+        <div class="slide" id="slide-17" data-index="16">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -2906,8 +2807,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
              ACT III: HIGH-PERFORMANCE ENGINE & STORAGE ARCHITECTURE (SLIDES 18 - 24)
              ========================================================================= -->
 
-        <!-- SLIDE 19: Native Engine Architecture: The 5-Plane Core -->
-        <div class="slide" id="slide-19" data-index="18">
+        <!-- SLIDE 18: Native Engine Architecture: The 5-Plane Core -->
+        <div class="slide" id="slide-18" data-index="17">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3021,8 +2922,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
             </div>
         </div>
 
-        <!-- SLIDE 20: Zero-Copy Memory Model: PyCapsule C Data Interface -->
-        <div class="slide" id="slide-20" data-index="19">
+        <!-- SLIDE 19: Zero-Copy Memory Model: PyCapsule C Data Interface -->
+        <div class="slide" id="slide-19" data-index="18">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3125,16 +3026,16 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
             </div>
         </div>
 
-        <!-- SLIDE 21: Sovereign Data Governance -->
-        <div class="slide" id="slide-21" data-index="20">
+        <!-- SLIDE 20: Sovereign Data Governance -->
+        <div class="slide" id="slide-20" data-index="19">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
                         <span class="slide-badge curation"><span class="ico" aria-hidden="true">⚖</span> Regulatory Compliance</span>
-                        <span class="slide-category">DPDP Act 2023 Enforcement</span>
+                        <span class="slide-category">DPDP Act 2023 Readiness</span>
                     </div>
                     <h2 class="slide-title">Sovereign Data Governance: DPDP Act & Dependency Retraction Graph</h2>
-                    <div class="slide-subtitle">DPDP-aligned compliance controls with dependency-directed retraction cascades across parent-child lineage</div>
+                    <div class="slide-subtitle">Compliance controls built for the DPDP Act, with dependency-directed retraction cascades across parent-child lineage</div>
                 </div>
                 <div class="slide-logo">DPDP Governance</div>
             </div>
@@ -3147,7 +3048,7 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
                     </div>
                     <div class="why-box">
                         <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
-                        <span class="why-text">Physical deletion across petabyte shards cannot happen synchronously. Logical invalidation takes &lt; 2 seconds, while vacuum compaction reclaims physical disk space safely.</span>
+                        <span class="why-text">Physical deletion at petabyte scale cannot be synchronous: removal is invalidation first, then reclamation &mdash; on a retention window counsel sets, not us.</span>
                     </div>
                 </div>
 
@@ -3198,10 +3099,10 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
                         <div class="card-body">
                             <strong>How MIRA Enforces Compliant Retraction:</strong>
                             <ul class="feature-list" style="margin-top: 4px;">
-                                <li>• <strong>Sub-2s Logical Invalidation:</strong> Sets a 1-bit tombstone flag in Lance metadata, instantly filtering records from training views.</li>
+                                <li>• <strong>Invalidation First:</strong> Sets a 1-bit tombstone flag in Lance metadata, instantly filtering records from training views.</li>
                                 <li>• <strong>Retraction Dependency Cascade:</strong> Lineage engine matches `_parent_id` to purge child chunks, dedup hash keys, and feature caches.</li>
                                 <li>• <strong>Physical Vacuum:</strong> Background GC safely reclaims raw disk blocks during scheduled off-peak compaction cycles.</li>
-                                <li>• <strong>Dataset Contracts:</strong> Each consumer — a training run, an evaluation, a partner release — is bound to a named, versioned selection. "Which models saw this document?" is a lookup, which is what makes removal <em>bounded</em>: retrain what actually consumed it, not everything.</li>
+                                <li>• <strong>Dataset Contracts:</strong> Every release is recorded against its recipient and purpose, and a training run registers the release it consumed — so "which models saw this document?" is a lookup, which makes removal <em>bounded</em>: retrain what consumed it, not everything.</li>
                                 <li>• <strong>Derived Statistics Retract, Not Recompute:</strong> Corpus statistics, language distributions and cluster counts that already include a purged document are updated in place wherever the aggregate is invertible. The planner records which aggregates support this, so the cost of a takedown is known <em>before</em> it is requested, not discovered during it.</li>
                                 <li>• <strong>Evidence, not a database dump.</strong> One command produces the bundle a reviewer asks for: the audit chain verified, approvals with their separation-of-duties check, <em>the policy versions that were live at the time</em>, and an exclusion summary &mdash; how many rows were dropped, for which reason, from which source. No document text goes into it.</li>
                             </ul>
@@ -3211,8 +3112,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
 
                 <div class="stat-banner">
                     <div class="stat-box">
-                        <span class="stat-val">&lt; 2 s</span>
-                        <span class="stat-lbl">Logical Invalidation Latency</span>
+                        <span class="stat-val">No Rewrite</span>
+                        <span class="stat-lbl">Removal Without a Petabyte Rewrite</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-val">Full Cascade</span>
@@ -3224,14 +3125,14 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
                     </div>
                     <div class="stat-box">
                         <span class="stat-val">Verifiable</span>
-                        <span class="stat-lbl">DPDP-Aligned Compliance Audit Trail</span>
+                        <span class="stat-lbl">Signed, Auditable Erasure Evidence</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 22: When Curated Data Turns Out to Be Wrong -->
-        <div class="slide" id="slide-22" data-index="21">
+        <!-- SLIDE 21: When Curated Data Turns Out to Be Wrong -->
+        <div class="slide" id="slide-21" data-index="20">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3317,8 +3218,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
             </div>
         </div>
 
-        <!-- SLIDE 23: Late Data, Upserts and Sources That Lie -->
-        <div class="slide" id="slide-23" data-index="22">
+        <!-- SLIDE 22: Late Data, Upserts and Sources That Lie -->
+        <div class="slide" id="slide-22" data-index="21">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3395,8 +3296,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
         </div>
 
                 <!-- SLIDE 24: Resilient Ingestion, Incremental Watermarks & Stream Pipel -->
-<!-- SLIDE 24: Resilient Ingestion and Flow Control -->
-        <div class="slide" id="slide-24" data-index="23">
+<!-- SLIDE 23: Resilient Ingestion and Flow Control -->
+        <div class="slide" id="slide-23" data-index="22">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3499,8 +3400,8 @@ report.to_dataset_card(<span class="str">"dataset_card.json"</span>)
             </div>
         </div>
 
-        <!-- SLIDE 25: Lance Columnar Storage & In-Place Metadata Appends -->
-        <div class="slide" id="slide-25" data-index="24">
+        <!-- SLIDE 24: Lance Columnar Storage & In-Place Metadata Appends -->
+        <div class="slide" id="slide-24" data-index="23">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3590,8 +3491,8 @@ dataset.add_columns(quality_scores)
             </div>
         </div>
 
-        <!-- SLIDE 26: Cross-Run Stateful Execution & Persistent State Plane -->
-        <div class="slide" id="slide-26" data-index="25">
+        <!-- SLIDE 25: Cross-Run Stateful Execution & Persistent State Plane -->
+        <div class="slide" id="slide-25" data-index="24">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3710,8 +3611,8 @@ dataset.add_columns(quality_scores)
              ACT IV: SOVEREIGN INDIC LINGUISTICS & CURATION SCIENCE (SLIDES 25 - 31)
              ========================================================================= -->
 
-        <!-- SLIDE 27: Sovereign Indic Linguistics -->
-        <div class="slide" id="slide-27" data-index="26">
+        <!-- SLIDE 26: Sovereign Indic Linguistics -->
+        <div class="slide" id="slide-26" data-index="25">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3807,8 +3708,8 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
             </div>
         </div>
 
-        <!-- SLIDE 28: Sovereign Indic Engineering -->
-        <div class="slide" id="slide-28" data-index="27">
+        <!-- SLIDE 27: Sovereign Indic Engineering -->
+        <div class="slide" id="slide-27" data-index="26">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -3829,7 +3730,7 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
                     </div>
                     <div class="why-box">
                         <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
-                        <span class="why-text">~30-35% of Indian regional government and news web pages are encoded in legacy ASCII fonts that appear as gibberish to standard scrapers. MIRA restores them.</span>
+                        <span class="why-text">~30&ndash;35% (estimate) of Indian regional government and news web pages from this period are encoded in legacy ASCII fonts that appear as gibberish to standard scrapers. MIRA restores them.</span>
                     </div>
                 </div>
 
@@ -3903,8 +3804,8 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
             </div>
         </div>
 
-        <!-- SLIDE 29: Curation Science: 3-Tier Hierarchical Deduplication -->
-        <div class="slide" id="slide-29" data-index="28">
+        <!-- SLIDE 28: Curation Science: 3-Tier Hierarchical Deduplication -->
+        <div class="slide" id="slide-28" data-index="27">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4016,8 +3917,8 @@ quality_profile:        <span class="cm"># resolved (lang_script, domain_group, 
             </div>
         </div>
 
-        <!-- SLIDE 30: Multimodal Architecture -->
-        <div class="slide" id="slide-30" data-index="29">
+        <!-- SLIDE 29: Multimodal Architecture -->
+        <div class="slide" id="slide-29" data-index="28">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4117,8 +4018,8 @@ schema = pa.schema([
             </div>
         </div>
 
-        <!-- SLIDE 31: Non-Destructive Curation -->
-        <div class="slide" id="slide-31" data-index="30">
+        <!-- SLIDE 30: Non-Destructive Curation -->
+        <div class="slide" id="slide-30" data-index="29">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4191,7 +4092,7 @@ schema = pa.schema([
       <span class="str">"label"</span>: <span class="str">"PII_AADHAAR"</span>, <span class="str">"action"</span>: <span class="str">"mask"</span>
     }
   ],
-  <span class="str">"openlineage_facet"</span>: {<span class="str">"producer"</span>: <span class="str">"mira.curator.v1"</span>, <span class="str">"schema_ver"</span>: <span class="str">"1.0.2"</span>}
+  <span class="str">"openlineage_facet"</span>: {<span class="str">"producer"</span>: <span class="str">"mira-curate.v1"</span>, <span class="str">"schema_ver"</span>: <span class="str">"1.0.2"</span>}
 }
                                 </div>
                             </div>
@@ -4223,8 +4124,8 @@ schema = pa.schema([
             </div>
         </div>
 
-        <!-- SLIDE 32: Curation Quality Triad -->
-        <div class="slide" id="slide-32" data-index="31">
+        <!-- SLIDE 31: Curation Quality Triad -->
+        <div class="slide" id="slide-31" data-index="30">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4321,7 +4222,7 @@ schema = pa.schema([
             </div>
         </div>
 
-                <div class="slide" id="slide-33" data-index="32">
+                <div class="slide" id="slide-32" data-index="31">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4423,8 +4324,8 @@ schema = pa.schema([
              ACT V: THE 4-MONTH MASTER PLAN (SLIDES 32 - 36)
              ========================================================================= -->
 
-        <!-- SLIDE 34: The 4-Month Master Plan -->
-        <div class="slide" id="slide-34" data-index="33">
+        <!-- SLIDE 33: The 4-Month Master Plan -->
+        <div class="slide" id="slide-33" data-index="32">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4583,8 +4484,8 @@ $ mira-curate mix --config llama_anneal.yaml \
             </div>
         </div>
 
-        <!-- SLIDE 35: Month 1 (Weeks 1–4) -->
-        <div class="slide" id="slide-35" data-index="34">
+        <!-- SLIDE 34: Month 1 (Weeks 1–4) -->
+        <div class="slide" id="slide-34" data-index="33">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4701,8 +4602,8 @@ pipeline.to_ray(num_workers=<span class="num">64</span>, batch_size=<span class=
             </div>
         </div>
 
-        <!-- SLIDE 36: Month 2 (Weeks 5–8) -->
-        <div class="slide" id="slide-36" data-index="35">
+        <!-- SLIDE 35: Month 2 (Weeks 5–8) -->
+        <div class="slide" id="slide-35" data-index="34">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4723,7 +4624,7 @@ pipeline.to_ray(num_workers=<span class="num">64</span>, batch_size=<span class=
                     </div>
                     <div class="why-box">
                         <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
-                        <span class="why-text">Democratizes high-performance curation for non-systems researchers while rescuing 35% of Indian web data lost to legacy 1990s font encodings.</span>
+                        <span class="why-text">Democratizes high-performance curation for non-systems researchers while rescuing the estimated 30&ndash;35% of Indian government archives and literature (1990&ndash;2010) lost to legacy font encodings.</span>
                     </div>
                 </div>
 
@@ -4790,19 +4691,19 @@ pipeline.to_ray(num_workers=<span class="num">64</span>, batch_size=<span class=
                         <span class="stat-lbl">Declarative Language Packs</span>
                     </div>
                     <div class="stat-box">
-                        <span class="stat-val">35% Rescued</span>
-                        <span class="stat-lbl">Legacy Indian Web Font Recovery</span>
+                        <span class="stat-val">~30&ndash;35%</span>
+                        <span class="stat-lbl">Legacy Font Text Recovered (estimate)</span>
                     </div>
                     <div class="stat-box">
                         <span class="stat-val">Month 2</span>
-                        <span class="stat-lbl">pip install mira-curator</span>
+                        <span class="stat-lbl">pip install mira-curate</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SLIDE 37: Month 3 (Weeks 9–12) -->
-        <div class="slide" id="slide-37" data-index="36">
+        <!-- SLIDE 36: Month 3 (Weeks 9–12) -->
+        <div class="slide" id="slide-36" data-index="35">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4897,8 +4798,8 @@ pipeline.to_ray(num_workers=<span class="num">64</span>, batch_size=<span class=
             </div>
         </div>
 
-        <!-- SLIDE 38: Month 4 (Weeks 13–16) -->
-        <div class="slide" id="slide-38" data-index="37">
+        <!-- SLIDE 37: Month 4 (Weeks 13–16) -->
+        <div class="slide" id="slide-37" data-index="36">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -4999,8 +4900,8 @@ mixture_schedule:
              ACT VI: ECONOMICS, TOPOLOGY, CAPABILITY PILLARS & KICKOFF (SLIDES 37 - 42)
              ========================================================================= -->
 
-        <!-- SLIDE 39: Hardware Economics: Sizing an Efficient ~7 TB/day Cluster -->
-        <div class="slide" id="slide-39" data-index="38">
+        <!-- SLIDE 38: Hardware Economics: Sizing an Efficient ~7 TB/day Cluster -->
+        <div class="slide" id="slide-38" data-index="37">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5111,8 +5012,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 40: End-to-End Production Topology -->
-        <div class="slide" id="slide-40" data-index="39">
+        <!-- SLIDE 39: End-to-End Production Topology -->
+        <div class="slide" id="slide-39" data-index="38">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5205,7 +5106,7 @@ mixture_schedule:
                             <ul class="feature-list">
                                 <li>• <strong>Lance Storage:</strong> Append-only columnar metadata; no rewrite of existing files.</li>
                                 <li>• <strong>Relations Graph & Spans:</strong> Non-destructive PII masking via `&lt;op&gt;__spans`.</li>
-                                <li>• <strong>DPDP Purge Cascade:</strong> Logical retraction across Lance metadata in &lt; 2s.</li>
+                                <li>• <strong>DPDP Purge Cascade:</strong> Logical retraction across Lance metadata, cascading to every derived row.</li>
                                 <li>• <strong>Pretraining Sharder:</strong> Tokenized Arrow/Megatron shards streamed to GPUs.</li>
                             </ul>
                         </div>
@@ -5233,8 +5134,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 41: Master Capability Checklist -->
-        <div class="slide" id="slide-41" data-index="40">
+        <!-- SLIDE 40: Master Capability Checklist -->
+        <div class="slide" id="slide-40" data-index="39">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5323,7 +5224,7 @@ mixture_schedule:
                             <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
                                 <td style="padding: 6px 12px;">8</td>
                                 <td style="padding: 6px 12px;"><strong>Krutidev / Chanakya Font Rescue</strong></td>
-                                <td style="padding: 6px 12px;">SIMD glyph mapping recovering 35% pre-Unicode 1990s legacy Indian web text</td>
+                                <td style="padding: 6px 12px;">SIMD glyph mapping recovering the estimated 30&ndash;35% of pre-Unicode legacy Indian web text</td>
                                 <td style="padding: 6px 12px;">Month 2 (W5-8)</td>
                                 <td style="padding: 6px 12px;"><span class="tag-pill purple">Planned</span></td>
                             </tr>
@@ -5373,8 +5274,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 42: Master Capability Checklist -->
-        <div class="slide" id="slide-42" data-index="41">
+        <!-- SLIDE 41: Master Capability Checklist -->
+        <div class="slide" id="slide-41" data-index="40">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5513,8 +5414,8 @@ mixture_schedule:
             </div>
         </div>
 
-        <!-- SLIDE 43: Cross-Cutting Runtime Guarantees -->
-        <div class="slide" id="slide-43" data-index="42">
+        <!-- SLIDE 42: Cross-Cutting Runtime Guarantees -->
+        <div class="slide" id="slide-42" data-index="41">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5639,7 +5540,7 @@ mixture_schedule:
             </div>
         </div>
 
-                <div class="slide" id="slide-44" data-index="43">
+                <div class="slide" id="slide-43" data-index="42">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5729,8 +5630,8 @@ minhash_lsh          0/412      ░░░░░░░░     &mdash;     &mdash;
             </div>
         </div>
 
-        <!-- SLIDE 45: Stopping It, Draining a Node, Diagnosing It -->
-        <div class="slide" id="slide-45" data-index="44">
+        <!-- SLIDE 44: Stopping It, Draining a Node, Diagnosing It -->
+        <div class="slide" id="slide-44" data-index="43">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5817,8 +5718,8 @@ bundle.tar.zst
             </div>
         </div>
 
-                        <!-- SLIDE 46: Conclusion & Sprint 1 Execution Kickoff -->
-                        <div class="slide" id="slide-46" data-index="45">
+                        <!-- SLIDE 45: Conclusion & Sprint 1 Execution Kickoff -->
+                        <div class="slide" id="slide-45" data-index="44">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -5870,13 +5771,13 @@ bundle.tar.zst
                                 <div class="code-header">TWO-WEEK EXECUTION BOARD</div>
                                 <div class="code-snippet">
 [<span class="str">TASK</span>]   1. Release Kernels: hardening, scalar fallback, x86/ARM wheels
-[<span class="str">TASK</span>]   2. Release cureta: packaging, credential safety, PyArrow bridge
+[<span class="str">TASK</span>]   2. Release the engine: packaging, credential safety, PyArrow bridge
 [<span class="str">TASK</span>]   3. Taggers: unified rule, model (GlotLID) &amp; LLM endpoints
 [<span class="str">TASK</span>]   4. Query-by-Tag: flat typed columns &amp; DuckDB token mixtures
 [<span class="str">TASK</span>]   5. Resiliency: DLQ per-row quarantine &amp; preemption recovery
 [<span class="str">TASK</span>]   6. SkyPilot Showcase: one-command cloud &amp; K8s cluster launch
 [<span class="str">DEMO</span>]   7. Integrated Engine Prototype: decorators + global dedup on Arrow
-[<span class="str">DECIDE</span>] 8. Week 2 Decision: empirical benchmarks decide merge vs separate
+[<span class="str">DECIDE</span>] 8. Week 2 Decision: one engine, mira-curate, on the kernels
                                 </div>
                             </div>
                             <ul class="feature-list" style="margin-top: 2px; font-size: 12px; line-height: 1.4;">
@@ -5908,90 +5809,8 @@ bundle.tar.zst
             </div>
         </div>
 
-        <!-- SLIDE 47: Architectural Integration -->
-        <div class="slide" id="slide-47" data-index="46">
-            <div class="slide-header">
-                <div class="slide-header-text">
-                    <div class="slide-meta">
-                        <span class="slide-badge engine"><span class="ico" aria-hidden="true">⑂</span> Systems Architecture</span>
-                        <span class="slide-category">Integration Strategy</span>
-                    </div>
-                    <h2 class="slide-title">Architectural Integration: cureta Orchestrator &amp; Native Execution Kernels</h2>
-                    <div class="slide-subtitle">Harmonizing High-Level Python Orchestration with Native Arrow Performance (Questionnaire §4)</div>
-                </div>
-                <div class="slide-logo">Integration</div>
-            </div>
-            <div class="slide-content">
-                <div class="what-why-strip">
-                    <div class="what-box">
-                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT IT DOES:</span>
-                        <span class="what-text">Combines cureta's high-level pipeline orchestration, SkyPilot launcher, and tagger catalog with high-performance native execution kernels via a clean Apache Arrow library boundary.</span>
-                    </div>
-                    <div class="why-box">
-                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
-                        <span class="why-text">Keeps orchestration and compute-heavy execution modular. cureta orchestrates pipelines and multi-cloud dispatch, while native SIMD kernels handle compute-heavy filtering. An internal switch from pandas to Arrow is evaluated at the Week 2 checkpoint.</span>
-                    </div>
-                </div>
-                <div class="flow-diagram" style="margin-bottom: 8px; padding: 4px 10px;">
-                    <div class="flow-step" style="padding: 4px 6px; border-left: 3px solid #38BDF8;">
-                        <div class="flow-step-title" style="font-size: 11px; color: #38BDF8;">cureta Orchestrator (Python)</div>
-                        <div class="flow-step-desc" style="font-size: 11px;">Pipeline Planning &middot; SkyPilot Multi-Cloud &middot; Tagger Catalog</div>
-                    </div>
-                    <div class="flow-arrow">&harr;</div>
-                    <div class="flow-step active" style="padding: 4px 6px; border-color: #34D399;">
-                        <div class="flow-step-title" style="font-size: 11px; color: #34D399;">Apache Arrow Boundary (Zero-Copy)</div>
-                        <div class="flow-step-desc" style="font-size: 11px;">PyArrow RecordBatch Boundary &middot; In-Memory Data Plane</div>
-                    </div>
-                    <div class="flow-arrow">&harr;</div>
-                    <div class="flow-step" style="padding: 4px 6px; border-left: 3px solid #A78BFA;">
-                        <div class="flow-step-title" style="font-size: 11px; color: #C084FC;">mira-kernels Native Engine (Rust)</div>
-                        <div class="flow-step-desc" style="font-size: 11px;">SIMD Normalization &middot; Verhoeff D5 &middot; MinHash LSH</div>
-                    </div>
-                </div>
-
-                <div class="grid-2" style="height: 52%;">
-                    <div class="card highlight-sky">
-                        <div class="card-header">
-                            <span class="card-title"><span class="ico" aria-hidden="true">⑂</span> The Orchestrator: cureta</span>
-                            <span class="tag-pill blue">Python Orchestrator · SkyPilot Ready</span>
-                        </div>
-                        <div class="card-body">
-                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
-                                <li>• <strong>Pipeline Orchestration:</strong> High-level pipeline authoring, Ray distributed execution, and stage lifecycle management.</li>
-                                <li>• <strong>Extensible Tagger Catalog:</strong> 50+ quality, linguistic, and PII filters using BaseTagger (unified @tagger decorator ergonomics planned).</li>
-                                <li>• <strong>Resilient Ingestion:</strong> Chunk-level checkpointing and resume; per-row error isolation and Dead-Letter Queues (DLQ) in active development.</li>
-                                <li>• <strong>'Deploy Anywhere' Portability:</strong> Native SkyPilot integration dispatches jobs across AWS, GCP, Azure, Kubernetes — and, for institutional clusters, <strong>Slurm queues and plain SSH node pools</strong>, so it runs on whatever the institution already has &mdash; including the Rancher-managed Kubernetes with Kueue and KubeRay that is deployed here. Managed jobs recover from preemption.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card highlight-emerald">
-                        <div class="card-header">
-                            <span class="card-title"><span class="ico" aria-hidden="true">◆</span> Integration Strategy: Modular Coupling &amp; Arrow Data Plane</span>
-                            <span class="tag-pill green">Modular Integration</span>
-                        </div>
-                        <div class="card-body">
-                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
-                                <li>• <strong>Modular Library Decoupling:</strong> Maintain clean API boundaries between the Python orchestrator (cureta) and high-speed execution engines (mira-kernels).</li>
-                                <li>• <strong>Arrow at the Library Boundary:</strong> Kernels operate natively on Apache Arrow; PyArrow conversion bridges batches during the decoupled release.</li>
-                                <li>• <strong>Internal Arrow Data Plane Evaluation:</strong> The two-week evaluation milestone benchmarks migrating cureta's internal batch representation directly to zero-copy Arrow RecordBatches.</li>
-                                <li>• <strong>Ecosystem Operators (SynthIA):</strong> The in-house synthetic instruction-tuning pipeline plugs in unchanged — generation and fan-out as <code>@expand</code>, rubric judging as a tagger — with MIRA adding scale-out, resume, <code>synth_*</code> provenance, and dedup against seed and evaluation sets.</li>
-                                <li>• <strong>Empirical Decision Milestone:</strong> Real-world workload benchmarks determine whether to consolidate into a single monorepo or maintain decoupled, modular packages.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="stat-banner">
-                    <div class="stat-box"><span class="stat-val">cureta Orchestrator</span><span class="stat-lbl">Pipeline Planning &amp; SkyPilot Dispatch</span></div>
-                    <div class="stat-box"><span class="stat-val">Arrow Boundary</span><span class="stat-lbl">Native SIMD Kernels via PyArrow</span></div>
-                    <div class="stat-box"><span class="stat-val">Multi-Paradigm</span><span class="stat-lbl">Rule, Model &amp; LLM Taggers</span></div>
-                    <div class="stat-box"><span class="stat-val">Modular Release</span><span class="stat-lbl">Decoupled Libraries with 2-Wk Checkpoint</span></div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- SLIDE 48: What Is Decided, What Is Not: Decisions We Need -->
-        <div class="slide" id="slide-48" data-index="47">
+        <!-- SLIDE 46: What Is Decided, What Is Not: Decisions We Need -->
+        <div class="slide" id="slide-46" data-index="45">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -6011,13 +5830,13 @@ bundle.tar.zst
                     </div>
                     <div class="why-box">
                         <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
-                        <span class="why-text">Every open question has a default so engineering is never blocked. But five of them change the shape of the build, and guessing wrong on those costs months of rework.</span>
+                        <span class="why-text">Every open question has a default so engineering is never blocked. But four of them change the shape of the build, and guessing wrong on those costs months of rework.</span>
                     </div>
                 </div>
                 <div class="flow-diagram" style="margin-bottom: 8px; padding: 4px 10px;">
                     <div class="flow-step" style="padding: 4px 6px; border-left: 3px solid #F59E0B;">
-                        <div class="flow-step-title" style="font-size: 11px; color: #FBBF24;">5 Blocking Decisions</div>
-                        <div class="flow-step-desc" style="font-size: 11px;">Integration &middot; Hardware &middot; IP &middot; Legal &middot; Languages</div>
+                        <div class="flow-step-title" style="font-size: 11px; color: #FBBF24;">4 Blocking Decisions</div>
+                        <div class="flow-step-desc" style="font-size: 11px;">Hardware &middot; IP &middot; Legal &middot; Languages</div>
                     </div>
                     <div class="flow-arrow">&rarr;</div>
                     <div class="flow-step active" style="padding: 4px 6px; border-color: #38BDF8;">
@@ -6039,7 +5858,7 @@ bundle.tar.zst
                         </div>
                         <div class="card-body">
                             <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
-                                <li>• <strong>Architecture Integration:</strong> Validate phased integration (cureta orchestrator + modular native SIMD kernels with Arrow data plane).</li>
+                                
                                 <li>• <strong>Hardware Profile:</strong> CPU models, node counts, NVMe, and whether GPU inference pools share nodes with training.</li>
                                 <li>• <strong>Open-Source &amp; IP:</strong> License model, ownership structure, module restrictions, and Contributor License Agreements (CLA).</li>
                                 <li>• <strong>Legal &amp; Compliance Owner:</strong> Ownership for DPDP compliance, takedown decisions, and CSAM hash-list agreements.</li>
@@ -6064,7 +5883,7 @@ bundle.tar.zst
                     </div>
                 </div>
                 <div class="stat-banner">
-                    <div class="stat-box"><span class="stat-val">5</span><span class="stat-lbl">Blocking decisions</span></div>
+                    <div class="stat-box"><span class="stat-val">4</span><span class="stat-lbl">Blocking decisions</span></div>
                     <div class="stat-box"><span class="stat-val">~140</span><span class="stat-lbl">Detailed questions in the written questionnaire</span></div>
                     <div class="stat-box"><span class="stat-val">Defaults</span><span class="stat-lbl">Every question has a documented default so work can start</span></div>
                     <div class="stat-box"><span class="stat-val">Async Sign-Off</span><span class="stat-lbl">Written review to close remaining defaults</span></div>
@@ -6073,8 +5892,8 @@ bundle.tar.zst
             </div>
         </div>
 
-        <!-- SLIDE 49: Working Assumptions and the Risks We Are Tracking -->
-        <div class="slide" id="slide-49" data-index="48">
+        <!-- SLIDE 47: Working Assumptions and the Risks We Are Tracking -->
+        <div class="slide" id="slide-47" data-index="46">
             <div class="slide-header">
                 <div class="slide-header-text">
                     <div class="slide-meta">
@@ -6157,12 +5976,416 @@ bundle.tar.zst
             </div>
         </div>
 
+        <!-- SLIDE 48: Where the Build Stands: What Runs Today -->
+        <div class="slide" id="slide-48" data-index="47">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge engine"><span class="ico" aria-hidden="true">◈</span> As Built</span>
+                        <span class="slide-category">Status, 7 October 2026</span>
+                    </div>
+                    <h2 class="slide-title">Where the Build Stands: What Runs Today</h2>
+                    <div class="slide-subtitle">The slides before this one are the plan as written in September, before any code. This one and the next three say what exists now, what was measured, and what is still ahead.</div>
+                </div>
+                <div class="slide-logo">As Built</div>
+            </div>
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT THIS IS:</span>
+                        <span class="what-text">The state of the engine after 56 board issues, each planned, built, tested and merged in turn: one Python package over one Rust kernel library, with every decision written down beside its reason.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">A plan is a promise and a status is a fact. Keeping both in one deck shows which promises have been kept, which have changed shape, and which are still promises.</span>
+                    </div>
+                </div>
+                <div class="grid-2" style="height: 66%;">
+                    <div class="card highlight-emerald">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> Built and merged</span>
+                            <span class="tag-pill green">Runs today</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>The engine:</strong> read, tag, transform, expand, select, write; plain functions, decorators and Arrow batches; a worker pool and Ray; a CLI and cluster launchers.</li>
+                                <li>• <strong>Never redo finished work:</strong> resume by shard, backfill of one operator by fingerprint, a row cache, retry of failed rows only, and a run published whole or not at all.</li>
+                                <li>• <strong>Indic text:</strong> NFC and match forms, script profiles, word and sentence segmentation, language packs for Hindi, Sanskrit and Tamil, a language-ID ensemble with a romanised router.</li>
+                                <li>• <strong>Quality, safety, PII:</strong> about sixty signals in one pass, published filters as presets, checksum-validated identifiers and a model tier, decontamination against evaluation sets.</li>
+                                <li>• <strong>Duplicates:</strong> exact, near (MinHash) and semantic, with keepers chosen by a stated rule, an index on disk, and a report of which kept documents a rerun replaced.</li>
+                                <li>• <strong>Assembly:</strong> selection with a reason per row, mixtures to a token budget, shuffled and packed training shards, SQL over a run, a corpus report and a dataset card.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card highlight-amber">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> In this deck's plan, not built yet</span>
+                            <span class="tag-pill amber">Still ahead</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>Lance as the curation store:</strong> a run is Parquet today, one tag table per operator, which already gives the no-rewrite tag append.</li>
+                                <li>• <strong>Erasure that cascades:</strong> tombstones and the retraction graph. Lineage (parent and part ids) and spans are in place for it.</li>
+                                <li>• <strong>Recognition and decoding:</strong> OCR, speech and video. Media enters as lineage with time ranges; text someone else recognised is cleaned.</li>
+                                <li>• <strong>A shipped legacy-font table and Sandhi splitting:</strong> the converter runs on a table the user supplies; no font's table has a licence the project can ship.</li>
+                                <li>• <strong>WARC input,</strong> and languages beyond the first three packs.</li>
+                                <li>• <strong>The sustained ~7 TB/day run:</strong> the largest measured runs so far are of the order of 10 GB.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">56</span><span class="stat-lbl">Board issues built and merged</span></div>
+                    <div class="stat-box"><span class="stat-val">6,499</span><span class="stat-lbl">Tests passing in the full suite</span></div>
+                    <div class="stat-box"><span class="stat-val">90.8%</span><span class="stat-lbl">Engine lines and branches the suite reaches</span></div>
+                    <div class="stat-box"><span class="stat-val">593</span><span class="stat-lbl">Decisions recorded with their reasons</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SLIDE 49: Built Beyond This Deck: What the Plan Did Not Describe -->
+        <div class="slide" id="slide-49" data-index="48">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge engine"><span class="ico" aria-hidden="true">◈</span> Beyond the Plan</span>
+                        <span class="slide-category">Status, 7 October 2026</span>
+                    </div>
+                    <h2 class="slide-title">Built Beyond This Deck: What the Plan Did Not Describe</h2>
+                    <div class="slide-subtitle">Working on real corpora asked for operators the September plan never listed. Each was added the same way: a signal or a reversible transform, never a silent deletion.</div>
+                </div>
+                <div class="slide-logo">Beyond the Plan</div>
+            </div>
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT THIS IS:</span>
+                        <span class="what-text">Capabilities that exist in the engine and appear on no earlier slide, grouped by what a curator uses them for.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">The plan was written from other pipelines' designs. These came from what the first real corpora actually held: garbled encodings, scanned magazines, remote buckets, and reruns.</span>
+                    </div>
+                </div>
+                <div class="grid-2" style="height: 66%;">
+                    <div class="card highlight-sky">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> Text repair and new signals</span>
+                            <span class="tag-pill blue">Operators</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>Mojibake:</strong> text read through the wrong codec is found and put back, only where the repair is exact.</li>
+                                <li>• <strong>Legacy-font text:</strong> detected and converted line by line, only when the result reads as the language.</li>
+                                <li>• <strong>Scanned, paged text:</strong> pages by a marker the user gives, running heads and feet removed, words broken across lines rejoined by the language pack's rule.</li>
+                                <li>• <strong>Marks out of place:</strong> a vowel sign with no letter to sit on, counted in the script profile's own pass.</li>
+                                <li>• <strong>Published filters as presets:</strong> Gopher, C4, FineWeb and FineWeb-2 as a pass/fail column and the rules that failed.</li>
+                                <li>• <strong>More signals:</strong> URL parts and domain blocklists, markup and code structure, n-gram perplexity per language, term lists, any classifier model, paragraph-level language.</li>
+                                <li>• <strong>Topics and chunks:</strong> labels from a codebook that means the same in every language; splitting on sentence boundaries.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card highlight-purple">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> Running it and trusting it</span>
+                            <span class="tag-pill purple">Operations</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>Remote inputs:</strong> object stores, the Hugging Face Hub, SFTP and HTTP, each file held to its version.</li>
+                                <li>• <strong>Generations:</strong> a reader sees a whole run or the one before it, never half of one.</li>
+                                <li>• <strong>Bounded memory:</strong> limits on what a run and a media file may hold; columns an operator does not read are never loaded.</li>
+                                <li>• <strong>On a cluster with no network:</strong> one image and a Kubernetes Job; no checkout, nothing downloaded at run time.</li>
+                                <li>• <strong>A documentation site and a runnable tour:</strong> generated from the code and tested, every public name listed.</li>
+                                <li>• <strong>Supply chain:</strong> workflow actions pinned by commit, dependency audit, secret scanning.</li>
+                                <li>• <strong>Coverage measured:</strong> lines and branches, including worker processes; reported, never a gate.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">Tag, Then Select</span><span class="stat-lbl">Every addition writes a column; nothing is dropped</span></div>
+                    <div class="stat-box"><span class="stat-val">text_orig</span><span class="stat-lbl">Every repair keeps the original and says where it changed</span></div>
+                    <div class="stat-box"><span class="stat-val">Both Backends</span><span class="stat-lbl">The mark counts agree between Rust and the Python fallback</span></div>
+                    <div class="stat-box"><span class="stat-val">Counted First</span><span class="stat-lbl">The newest rules were sized on a real corpus before they were written</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SLIDE 50: Measured So Far, on Real Text -->
+        <div class="slide" id="slide-50" data-index="49">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge engine"><span class="ico" aria-hidden="true">◈</span> Measured</span>
+                        <span class="slide-category">Status, 7 October 2026</span>
+                    </div>
+                    <h2 class="slide-title">Measured So Far, on Real Text</h2>
+                    <div class="slide-subtitle">Counts and timings recorded while building, each on a named class of machine. These are not the plan's targets; where a target and a measurement differ, this slide is the one to believe.</div>
+                </div>
+                <div class="slide-logo">Measured</div>
+            </div>
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT THIS IS:</span>
+                        <span class="what-text">What has been measured, on a public Indic web corpus and on a set of scanned Sanskrit magazines, and the limits of those measurements.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">Most figures earlier in this deck are design targets, marked as such. A stakeholder deciding on hardware or schedule needs to know which numbers have been seen and which are still intended.</span>
+                    </div>
+                </div>
+                <div class="grid-2" style="height: 66%;">
+                    <div class="card highlight-emerald">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> What the corpora held</span>
+                            <span class="tag-pill green">Counts</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>One part of a public Indic web corpus, 1,812,326 documents:</strong> mojibake in 1,245 (0.069%), most of them Malayalam and English; legacy-font lines in 5. Both are rare there, which is a finding.</li>
+                                <li>• <strong>175 scanned editions of a Sanskrit magazine, 12,046 pages:</strong> 8,099 words broken across lines and rejoined; a rule that joins only words seen elsewhere in the document would have joined a fifth of them.</li>
+                                <li>• <strong>Running heads and feet in those editions:</strong> a book's thresholds remove 638 lines; a tenth of the pages removes 5,488. Most repeated lines sit mid-page, which no edge rule reaches.</li>
+                                <li>• <strong>Recognition noise there:</strong> 109 of 4.7 million combining marks have no base; 96 of 2.5 million vowel signs are misplaced. That recogniser's output is clean.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card highlight-amber">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> Speed, and the limits of these numbers</span>
+                            <span class="tag-pill amber">Honest limits</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>The script profile:</strong> 39 MB of Devanagari in 0.20 s on one thread of a 6-core desktop CPU, with the new mark counts included; ASCII of the same size in 0.13 to 0.15 s.</li>
+                                <li>• <strong>The paged-text operators:</strong> about half a second for a pass over the 39 MB, reading included.</li>
+                                <li>• <strong>Scale is not yet shown:</strong> the largest runs measured are of the order of 10 GB. The ~7 TB/day figure remains a planning figure.</li>
+                                <li>• <strong>Machines:</strong> the latest release was gated on one machine; a second CPU family, macOS and Windows are part of the usual gate and of the work ahead.</li>
+                                <li>• <strong>Continuous integration is started by hand,</strong> by choice while the repository is private; the same commands are the local gate.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">1.8M</span><span class="stat-lbl">Documents in the web-corpus part measured</span></div>
+                    <div class="stat-box"><span class="stat-val">12,046</span><span class="stat-lbl">Scanned pages measured</span></div>
+                    <div class="stat-box"><span class="stat-val">~190 MB/s</span><span class="stat-lbl">Script profile, one thread, Devanagari</span></div>
+                    <div class="stat-box"><span class="stat-val">~10 GB</span><span class="stat-lbl">Largest run measured so far</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SLIDE 51: Benchmarks on Three Machines: Against Other Frameworks -->
+        <div class="slide" id="slide-51" data-index="50">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge engine"><span class="ico" aria-hidden="true">◈</span> Benchmarks</span>
+                        <span class="slide-category">Status, 7 October 2026</span>
+                    </div>
+                    <h2 class="slide-title">Benchmarks on Three Machines: Against Other Frameworks</h2>
+                    <div class="slide-subtitle">The same harness, the same input and alternating rounds for every framework. The two-GPU measurement is still running; these are the rows recorded by midday on 7 October.</div>
+                </div>
+                <div class="slide-logo">Benchmarks</div>
+            </div>
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT THIS IS:</span>
+                        <span class="what-text">Head-to-head timings of deduplication and embedding on a two-GPU server, a 16-core desktop and a 96-core server, with what each framework found and what it cost in CPU and memory.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">The plan's case is that CPU kernels make a GPU optional for most of curation. These are the first measurements of that claim against the frameworks a team would otherwise use.</span>
+                    </div>
+                </div>
+                <div class="grid-2" style="height: 66%;">
+                    <div class="card highlight-emerald">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> A two-GPU server: against a GPU curation framework</span>
+                            <span class="tag-pill green">7 October</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>The machine and the input:</strong> two Xeon sockets (40 cores, 80 threads) and two 32 GB V100 GPUs; 1 GB of Indic web text, 171,457 documents in 192 files. Five timed rounds, the two frameworks alternating; the best of each.</li>
+                                <li>• <strong>Exact duplicates:</strong> mira-curate on the CPUs 3.71 s; NeMo Curator with both GPUs 72.28 s. 19.5 times the wall time, 7.5 times the CPU seconds, 2.6 times the memory.</li>
+                                <li>• <strong>Near duplicates (MinHash):</strong> 4.95 s against 110.31 s, 22.3 times.</li>
+                                <li>• <strong>They find the same documents:</strong> 157 and 156 exact duplicates; the one extra pair differs only in white space, which mira-curate's key folds.</li>
+                                <li>• <strong>Embedding on the GPUs:</strong> 332 documents a second on 80 CPU workers; 1,970 a second with 16 workers on the two GPUs, which are then 90% busy. One worker a GPU leaves it a quarter busy.</li>
+                                <li>• <strong>What failed:</strong> semantic dedup at a loose threshold (cosine 0.8) on this cut produces over a billion candidate pairs and stops with an error. Recorded as a defect to fix, not hidden.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card highlight-sky">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> CPU machines: a desktop, and a 96-core server</span>
+                            <span class="tag-pill blue">Scaling</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>A 16-core desktop CPU (Ryzen 9 7950X), 10 GB, 1,715,084 documents:</strong> measured: exact dedup in 11.52 s (868 MB/s); MinHash in 16.43 s (609 MB/s); about 12 GB of memory.</li>
+                                <li>• <strong>The same 10 GB held to fewer cores:</strong> exact dedup takes 79.0 s on 2 logical CPUs, 40.7 s on 4, 23.1 s on 8, 14.9 s on 16.</li>
+                                <li>• <strong>The 1 GB cut on that desktop:</strong> 2.21 s exact and 2.96 s MinHash, against 3.71 s and 4.95 s on the two-socket server, whose cores are older.</li>
+                                <li>• <strong>A 96-core server socket (Xeon 6972P), September, against DataTrove on the same input:</strong> MinHash 14.7 times faster with 16 workers and 3.9 times with 96; exact dedup 1.2 to 1.6 times; plain read and write 1.0 to 1.6 times. CPU seconds 2 to 36 times fewer.</li>
+                                <li>• <strong>How these are taken:</strong> one harness for every framework, CPU time of the whole process tree, warm-up rows never used as a figure, every number read back from the recorded rows.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">19.5×</span><span class="stat-lbl">Exact dedup, 1 GB: CPU engine against a two-GPU framework</span></div>
+                    <div class="stat-box"><span class="stat-val">22.3×</span><span class="stat-lbl">MinHash dedup, same machine and input</span></div>
+                    <div class="stat-box"><span class="stat-val">868 MB/s</span><span class="stat-lbl">Measured: exact dedup of 10 GB on a 16-core desktop</span></div>
+                    <div class="stat-box"><span class="stat-val">1,970 / s</span><span class="stat-lbl">Documents embedded on two GPUs, 16 workers</span></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- SLIDE 52: What Comes Next: The Board From Here -->
+        <div class="slide" id="slide-52" data-index="51">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge engine"><span class="ico" aria-hidden="true">◈</span> Next</span>
+                        <span class="slide-category">Status, 7 October 2026</span>
+                    </div>
+                    <h2 class="slide-title">What Comes Next: The Board From Here</h2>
+                    <div class="slide-subtitle">Forty-seven entries are written and not started. Each has its steps, its measurement and its definition of done; the order below is the order they are numbered in.</div>
+                </div>
+                <div class="slide-logo">Next</div>
+            </div>
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT THIS IS:</span>
+                        <span class="what-text">The remaining work as the board holds it today, alongside the larger plan on the earlier slides, which stands.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">Present and future in one place: what a stakeholder can use now, and what each next piece of work would add, so priorities can be set against real entries rather than a schedule drawn in advance.</span>
+                    </div>
+                </div>
+                <div class="grid-2" style="height: 66%;">
+                    <div class="card highlight-sky">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> For the corpora and the people curating them</span>
+                            <span class="tag-pill blue">Next</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>Text the engine still reads wrongly:</strong> transliteration between schemes and scripts; WARC and WET input; in-memory inputs.</li>
+                                <li>• <strong>Deciding with evidence:</strong> a review sample and labels to calibrate a threshold; what changed between two runs; ablations with a small model on two selections.</li>
+                                <li>• <strong>Selections and releases:</strong> a saved selection that reopens; a release laid out for training; several runs opened or merged as one; a tokenizer-training sample.</li>
+                                <li>• <strong>New kinds of dataset:</strong> parallel text kept as pairs; instruction pairs and conversations; recipes per kind of source; a catalogue from dataset cards.</li>
+                                <li>• <strong>Models in the loop:</strong> an LLM judge qualified per language and distilled; rephrasing weak documents; cost recorded per run; a classifier with several heads; the language of code.</li>
+                                <li>• <strong>Entities:</strong> a versioned type schema, spans as data, training exports, relations, linking to Wikidata, one table across the corpus.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card highlight-purple">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> For the engine and its release</span>
+                            <span class="tag-pill purple">Next</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>Proven at scale:</strong> the launchers and Ray paths on real clusters; near-dedup, semantic dedup and embedding measured against the earlier pipeline and fixed where slower.</li>
+                                <li>• <strong>Faults:</strong> a crash between any two writes, a full disk, a stalled filesystem; the kernels' parsers under a fuzzer.</li>
+                                <li>• <strong>Release:</strong> a compiled-only build with honest fingerprints; Windows in two tiers; CI on every pull request; a user's guide.</li>
+                                <li>• <strong>Operability:</strong> errors with stable codes; telemetry through OpenTelemetry; metadata in Croissant and PROV-O.</li>
+                                <li>• <strong>Dedup you can explain and withdraw:</strong> why a copy lost, removing every copy, a page's versions.</li>
+                                <li>• <strong>Still from the plan:</strong> the store, erasure that cascades, recognition and decoding, more languages, the sustained high-volume run.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">47</span><span class="stat-lbl">Board entries written and not started</span></div>
+                    <div class="stat-box"><span class="stat-val">Count First</span><span class="stat-lbl">An entry that finds little in the corpus is cut short</span></div>
+                    <div class="stat-box"><span class="stat-val">One at a Time</span><span class="stat-lbl">Each entry is built, gated and merged before the next</span></div>
+                    <div class="stat-box"><span class="stat-val">Plan Stands</span><span class="stat-lbl">The earlier slides remain the larger plan</span></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- SLIDE 53: Plans Added Since September: Data, Scale, Release -->
+        <div class="slide" id="slide-53" data-index="52">
+            <div class="slide-header">
+                <div class="slide-header-text">
+                    <div class="slide-meta">
+                        <span class="slide-badge engine"><span class="ico" aria-hidden="true">◈</span> Newer Plans</span>
+                        <span class="slide-category">Status, 7 October 2026</span>
+                    </div>
+                    <h2 class="slide-title">Plans Added Since September: Data, Scale, Release</h2>
+                    <div class="slide-subtitle">Written after this deck's plan, as the first corpora and the first users arrived. Each is a document in the planning repository with its reasons; none is built unless slide 48 says so.</div>
+                </div>
+                <div class="slide-logo">Newer Plans</div>
+            </div>
+            <div class="slide-content">
+                <div class="what-why-strip">
+                    <div class="what-box">
+                        <span class="what-label"><span class="ico" aria-hidden="true">ⓘ</span> WHAT THIS IS:</span>
+                        <span class="what-text">The plans that did not exist when the earlier slides were written: how the shared datasets are organised, how curated data is served and combined, how the engine is released and run by others, and how it is compared.</span>
+                    </div>
+                    <div class="why-box">
+                        <span class="why-label"><span class="ico" aria-hidden="true">◎</span> WHY IT MATTERS:</span>
+                        <span class="why-text">A deck that stops at the first plan hides the decisions made since. These are the ones a stakeholder would otherwise meet for the first time in a folder name or a release note.</span>
+                    </div>
+                </div>
+                <div class="grid-2" style="height: 66%;">
+                    <div class="card highlight-sky">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> Datasets: a commons, not a pile of folders</span>
+                            <span class="tag-pill blue">Data plan</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>One shared tree, by stage, then dataset, then snapshot:</strong> inbox, raw, curated, derived, releases, evaluation, retired. Not by language or domain: language is something curation measures, not something a contributor files.</li>
+                                <li>• <strong>A card per dataset,</strong> and a catalogue generated from the cards: source, rights, format, languages claimed, and how it is to be read.</li>
+                                <li>• <strong>Rights classes decide where data may sit:</strong> data shared by agreement, or holding personal data, stays out of the common tree.</li>
+                                <li>• <strong>Evaluation sets are never read by a training job,</strong> and a release is laid out by provenance, then language and script.</li>
+                                <li>• <strong>Curated data at scale:</strong> a serving copy partitioned and sorted for reading, several runs opened as one view, two runs merged, a recipe per kind of source. A table catalogue only when a measurement asks for it.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card highlight-purple">
+                        <div class="card-header">
+                            <span class="card-title"><span class="ico" aria-hidden="true">◈</span> Release, operation and evidence</span>
+                            <span class="tag-pill purple">Engineering plan</span>
+                        </div>
+                        <div class="card-body">
+                            <ul class="feature-list" style="margin-top: 2px; font-size: 11.5px; line-height: 1.35;">
+                                <li>• <strong>Release as compiled code:</strong> the engine compiled with its fingerprints kept honest; Windows in two tiers; telemetry through OpenTelemetry as an optional extra.</li>
+                                <li>• <strong>Run by people without the source:</strong> one image built from two wheels, a Kubernetes Job from a recipe, a local registry, no network at run time. Built.</li>
+                                <li>• <strong>CI/CD practice for the project's repositories:</strong> actions pinned by commit, least privilege, dependency and secret scanning, coverage reported. Applied here first.</li>
+                                <li>• <strong>A paper and a head-to-head measurement:</strong> the engine against a GPU curation framework on one machine, same corpus, cost stated beside speed. Protocol written; results pending.</li>
+                                <li>• <strong>A twelve-month build plan beside this four-month one,</strong> scored against its exit criteria after each batch of work.</li>
+                                <li>• <strong>Other kinds of dataset:</strong> instruction pairs and conversations, parallel text, evaluation and preference data, each curated with the same guarantees. On the board, not started.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-banner">
+                    <div class="stat-box"><span class="stat-val">By Dataset</span><span class="stat-lbl">The shared tree's unit, with a card for each</span></div>
+                    <div class="stat-box"><span class="stat-val">Measured</span><span class="stat-lbl">Language and domain are results of curation</span></div>
+                    <div class="stat-box"><span class="stat-val">Compiled</span><span class="stat-lbl">The planned form of the first release</span></div>
+                    <div class="stat-box"><span class="stat-val">Twelve Months</span><span class="stat-lbl">A longer build plan beside the four-month one</span></div>
+                </div>
+
+            </div>
+        </div>
+
         <!-- Bottom Controls Bar (Inside presentationContainer) -->
         <div class="controls-bar">
             <div class="controls-left">
                 <button class="nav-btn" id="prevBtn" aria-label="Previous slide"><span class="ico" aria-hidden="true">‹</span> Previous</button>
                 <button class="nav-btn primary-btn" id="nextBtn" aria-label="Next slide">Next <span class="ico" aria-hidden="true">›</span></button>
-                <span class="slide-counter" id="slideCounter">1 / 49</span>
+                <span class="slide-counter" id="slideCounter">1 / 53</span>
             </div>
 
             <div class="kb-hints">
@@ -6182,7 +6405,7 @@ bundle.tar.zst
         <!-- Overview Modal (Inside presentationContainer) -->
         <div class="overview-modal" id="overviewModal">
             <div class="overview-header">
-                <div class="overview-title"><span class="ico" aria-hidden="true" style="color: var(--accent-sky); margin-right: 8px;">◎</span> MIRA Curator: Slide Navigator</div>
+                <div class="overview-title"><span class="ico" aria-hidden="true" style="color: var(--accent-sky); margin-right: 8px;">◎</span> mira-curate: Slide Navigator</div>
                 <button class="nav-btn" id="closeOverviewBtn"><span class="ico" aria-hidden="true">✕</span> Close</button>
             </div>
             <div class="overview-grid" id="overviewGrid">
